@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from html.webtend.net/gairol/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 Jul 2025 01:14:41 GMT -->
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Gairol - Coworking and Creative Space HTML Template</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href=" {{asset('assets/images/favicon.png')}}" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="{{asset('assets/css/all.css')}}">
+
+    <!--====== animate css ======-->
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+
+    <!--====== HEADER PART START ======-->
+      @include('Layout/Navbar')
+    <!--====== HEADER PART ENDS ======-->
+    
+    <!--====== BANNER PART START ======-->
+       
+    <section style="margin-top: 105px;">
+        <div class="img">
+            <img src="assets/images/Garut.jpg" alt="" srcset="">
+            <div class="text">
+                <p>
+                </p>
+            </div>
+            </div>
+    </section> 
+    
+    <!--====== BANNER PART ENDS ======-->
+
+    <!--====== SUB PART START ======-->
+      
+    <section class="sub-area">
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-md-6">
+                    <div class="sub-item text-center">
+                        <img src="assets/images/sub-1.png" alt="sub">
+                        <h4 class="title">Unlimited Connection</h4>
+                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
+                        <a href="#"><i class="far fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sub-item text-center">
+                        <img src="assets/images/sub-2.png" alt="sub">
+                        <h4 class="title">Exist Phone Booth</h4>
+                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
+                        <a href="#"><i class="far fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sub-item text-center">
+                        <img src="assets/images/sub-3.png" alt="sub">
+                        <h4 class="title">Fresh Food & Fruits</h4>
+                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
+                        <a href="#"><i class="far fa-plus"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="sub-item text-center">
+                        <img src="assets/images/sub-4.png" alt="sub">
+                        <h4 class="title">Global Access</h4>
+                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
+                        <a href="#"><i class="far fa-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== SUB PART ENDS ======-->
+
+    <!--====== ABOUT US PART START ======-->
+      
+    <section class="about-us-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="abuot-thumb">
+                        <img src="assets/images/about-thumb.jpg" alt="about">
+                        <div class="about-shape">
+                            <img src="assets/images/about-shape.png" alt="about">
+                        </div>
+                        <div class="about-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content ml-55">
+                        <span class=" wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="0ms">About Us</span>
+                        <h3 class="title wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="100ms">We offer creative working place <br> & environments that suit your business</h3>
+                        <div class="about-info wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="100ms">
+                            <h5 class="title">Rosalina D. William</h5>
+                            <span>Founder</span>
+                            <img src="assets/images/about-info.png" alt="about">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== ABOUT US PART ENDS ======-->
+
+    <!--====== TOUR PART START ======-->
+      
+    <section class="tour-area pt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-7">
+                    <div class="tour-thumb mt-20">
+                        <img src="assets/images/tour-1.jpg" alt="tour">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="tour-thumb mt-20">
+                        <img src="assets/images/tour-2.jpg" alt="tour">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="tour-thumb mt-20">
+                        <img src="assets/images/tour-4.jpg" alt="tour">
+                    </div>
+                </div>
+                <div class="col-lg-8 order-6 order-lg-5">
+                    <div class="tour-thumb mt-20">
+                        <img src="assets/images/tour-5.jpg" alt="tour">
+                        <div class="tour-overlay">
+                            <span>Make A Small Tour Here</span>
+                            <h3 class="title">Which grew nearly 9 percent over the previous year.</h3>
+                            <p>But an increased reliance on outsourcing wasn’t the only thing boosting Accenture, TCS, Cognizant, and Wipro to the top of the charts. “The top four invested significantly in enhancing their capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 order-5 order-lg-6">
+                    <div class="tour-thumb mt-20">
+                        <img src="assets/images/tour-6.jpg" alt="tour">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== TOUR PART ENDS ======-->
+
+    <!--====== FUN FACTS PART START ======-->
+      
+    <section class="fun-facts pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="fun-facts-content">
+                        <span>Fun Facts</span>
+                        <h2 class="title">Community where everyone is welcome.</h2>
+                    </div>
+                    <div class="skill-area">
+                        <div class="skills">
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h3 class="skill-title">UX Design</h3>
+                                    <div class="skill-percentage">
+                                        <div class="count-box"><span class="count-text" data-speed="2100" data-stop="95">0</span>%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-width="95"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h3 class="skill-title">Web Development</h3>
+                                    <div class="skill-percentage">
+                                        <div class="count-box"><span class="count-text" data-speed="2000" data-stop="90">0</span>%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-width="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h3 class="skill-title">Marketing & Strategy</h3>
+                                    <div class="skill-percentage">
+                                        <div class="count-box"><span class="count-text" data-speed="1900" data-stop="70">0</span>%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-width="70"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h3 class="skill-title">Consultancy </h3>
+                                    <div class="skill-percentage">
+                                        <div class="count-box"><span class="count-text" data-speed="1900" data-stop="75">0</span>%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="bar-inner">
+                                        <div class="bar progress-line" data-width="75"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fun-facts-thumb">
+            <img src="assets/images/fun-facts-thumb.html" alt="">
+        </div>
+    </section> 
+   
+    <!--====== FUN FACTS PART ENDS ======-->
+
+    <!--====== BENEFITS PART START ======-->
+      
+    <section class="benefits-area bg_cover" style="background-image: url(assets/images/benefits-bg.html);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="benefits-content text-center">
+                        <span>Your Benefits</span>
+                        <h3 class="title">The Top Four Outsourcers On Everest Group’s.</h3>
+                        <ul>
+                            <li><a class="main-btn main-btn-2" href="#">Book A Desk</a></li>
+                            <li><a class="main-btn main-btn-2" href="#">Take A Tour</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== BENEFITS PART ENDS ======-->
+
+    <!--====== PRICING PART START ======-->
+      
+    <section class="pricing-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <span>Price</span>
+                        <h3 class="title">Price & Plans</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-item text-center white-bg mt-30 wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="100ms">
+                        <span>Single</span><br>
+                        <h3 class="title"><span>$</span>249</h3>
+                        <p>Monthly</p>
+                        <ul>
+                            <li>Daily use of workspace</li>
+                            <li>Printing and scanning</li>
+                            <li>Internet</li>
+                            <li>Kitchen</li>
+                            <li>1 coffee or tea</li>
+                            <li>Cleaning and maintenance</li>
+                        </ul>
+                        <a class="main-btn main-btn-2" href="#">Purchase Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-item item text-center white-bg mt-30 center wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <span>5 Person</span><br>
+                        <h3 class="title"><span>$</span>399</h3>
+                        <p>Monthly</p>
+                        <ul>
+                            <li>Daily use of workspace</li>
+                            <li>Printing and scanning</li>
+                            <li>Internet</li>
+                            <li>Kitchen</li>
+                            <li>1 coffee or tea</li>
+                            <li>Cleaning and maintenance</li>
+                        </ul>
+                        <a class="main-btn" href="#">Purchase Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="pricing-item text-center white-bg mt-30 wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <span>Big Team</span><br>
+                        <h3 class="title"><span>$</span>999</h3>
+                        <p>Monthly</p>
+                        <ul>
+                            <li>Daily use of workspace</li>
+                            <li>Printing and scanning</li>
+                            <li>Internet</li>
+                            <li>Kitchen</li>
+                            <li>1 coffee or tea</li>
+                            <li>Cleaning and maintenance</li>
+                        </ul>
+                        <a class="main-btn main-btn-2" href="#">Purchase Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== PRICING PART ENDS ======-->
+
+    <!--====== OUR PLACE PART START ======-->
+      
+    <section class="our-place-area d-flex justify-content-lg-end justify-content-center">
+        <div class="our-place-item">
+            <div class="our-place-content">
+                <span>Our Place</span>
+                <h3 class="title">Building & Area</h3>
+                <div class="row plans-item-slide">
+                    <div class="col-lg-4">
+                        <div class="our-place-item text-center">
+                            <i class="fal fa-car"></i><br>
+                            <span>Car Parking</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="our-place-item text-center">
+                            <i class="fal fa-coffee"></i><br>
+                            <span>Restaurent</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="our-place-item text-center">
+                            <i class="fal fa-shopping-cart"></i><br>
+                            <span>super market</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="our-place-item text-center">
+                            <i class="fal fa-laptop-code"></i><br>
+                            <span>web designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="our-place-text text-center plans-slider">
+                    <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service provid-ers has remained unchanged this  year, with Accenture taking the top stop for the third year in a row. However, the real headliner may be the outsourcing market itself, which grew nearly 9 percent over the previous year in constant currency terms. “This momentum in growth was visible across the top four in the IT services categories Everest Group evaluated,” says Everest Group. </p>
+                    <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service provid-ers has remained unchanged this  year, with Accenture taking the top stop for the third year in a row. However, the real headliner may be the outsourcing market itself, which grew nearly 9 percent over the previous year in constant currency terms. “This momentum in growth was visible across the top four in the IT services categories Everest Group evaluated,” says Everest Group. </p>
+                    <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service provid-ers has remained unchanged this  year, with Accenture taking the top stop for the third year in a row. However, the real headliner may be the outsourcing market itself, which grew nearly 9 percent over the previous year in constant currency terms. “This momentum in growth was visible across the top four in the IT services categories Everest Group evaluated,” says Everest Group. </p>
+                    <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service provid-ers has remained unchanged this  year, with Accenture taking the top stop for the third year in a row. However, the real headliner may be the outsourcing market itself, which grew nearly 9 percent over the previous year in constant currency terms. “This momentum in growth was visible across the top four in the IT services categories Everest Group evaluated,” says Everest Group. </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== OUR PLACE PART ENDS ======-->
+
+    <!--====== NEWS PART START ======-->
+      
+    <section class="news-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <span>News</span>
+                        <h3 class="title">News Feeds</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7">
+                    <div class="news-item mt-30 wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="100ms">
+                        <div class="news-thumb">
+                            <img src="assets/images/news-1.html" alt="news">
+                        </div>
+                        <div class="news-content pt-35">
+                            <ul>
+                                <li><i class="far fa-clock"></i> 23rd January 2019</li>
+                                <li><i class="far fa-user"></i> By Admin</li>
+                            </ul>
+                            <h3 class="title">The four utsourcers on Everest Group’s annual ranking.</h3>
+                            <a href="#">Read More</a>
+                            <span>Office</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7">
+                    <div class="news-item mt-30 wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms">
+                        <div class="news-thumb">
+                            <img src="assets/images/news-2.html" alt="news">
+                        </div>
+                        <div class="news-content pt-35">
+                            <ul>
+                                <li><i class="far fa-clock"></i> 23rd January 2019</li>
+                                <li><i class="far fa-user"></i> By Admin</li>
+                            </ul>
+                            <h3 class="title">The four utsourcers on Everest Group’s annual ranking.</h3>
+                            <a href="#">Read More</a>
+                            <span>Coffee</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7">
+                    <div class="news-item mt-30 wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="500ms">
+                        <div class="news-thumb">
+                            <img src="assets/images/news-3.html" alt="news">
+                        </div>
+                        <div class="news-content pt-35">
+                            <ul>
+                                <li><i class="far fa-clock"></i> 23rd January 2019</li>
+                                <li><i class="far fa-user"></i> By Admin</li>
+                            </ul>
+                            <h3 class="title">The four utsourcers on Everest Group’s annual ranking.</h3>
+                            <a href="#">Read More</a>
+                            <span>Desk</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== NEWS PART ENDS ======-->
+
+    <!--====== CALL PART START ======-->
+      
+    <section class="call-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="call-item">
+                        <i class="fal fa-phone"></i>
+                        <div class="row justify-content-end align-items-center">
+                            <div class="col-lg-6">
+                                <div class="call-content">
+                                    <span>make a call for any type query</span>
+                                    <h5 class="title">+987 877 987 098 98</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <!--====== CALL PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+   @include('Layout/Footer')
+    <!--====== FOOTER PART ENDS ======-->
+    
+    <!--====== GO TO TOP PART START ======-->
+    
+    <div class="go-top-area">
+        <div class="go-top-wrap">
+            <div class="go-top-btn-wrap">
+                <div class="go-top go-top-btn">
+                    <i class="fa fa-angle-double-up"></i>
+                    <i class="fa fa-angle-double-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--====== GO TO TOP PART ENDS ======-->
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+   
+    <script src="{{asset('assets/js/vendor/modernizr-3.6.0.min.html')}}""></script>
+    <script src=" {{asset('assets/js/vendor/jquery-1.12.4.min.html')}}""></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="{{asset('assets/js/bootstrap.min.html')}}""></script>
+    <script src="  {{asset('assets/js/popper.min.html')}}""></script>
+
+    <!--====== Slick js ======-->
+    <script src="{{asset('assets/js/slick.min.html')}}""></script>
+
+    <!--====== Isotope js ======-->
+    <script src="{{asset('assets/js/isotope.pkgd.min.html')}}""></script>
+
+    <!--====== appear js ======-->
+    <script src="{{asset('assets/js/jquery.appear.min.html')}}""></script>
+
+    <!--====== counterup js ======-->
+    <script src=" {{asset('assets/js/jquery.counterup.min.html')}}""></script>
+
+    
+    <!--====== wow js ======-->
+    <script src=" {{asset('assets/js/wow.min.html')}}""></script>
+
+    <!--====== circle progress js ======-->
+    <script src="{{asset('assets/js/circle-progress.min.html')}}""></script>
+
+    <!--====== waypoints js ======-->
+    <script src="{{asset('assets/js/waypoints.min.html')}}""></script>
+
+    <!--====== Images Loaded js ======-->
+    <script src="  {{asset('assets/js/imagesloaded.pkgd.min.html')}}""></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="{{asset('assets/js/jquery.magnific-popup.min.html')}}""></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="{{asset('assets/js/ajax-contact.html')}}""></script>
+
+    <!--====== Main js ======-->
+    <script src=" {{asset('assets/js/main.html')}}""></script>
+
+</body>
+
+
+<!-- Mirrored from html.webtend.net/gairol/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 Jul 2025 01:14:41 GMT -->
+</html>
