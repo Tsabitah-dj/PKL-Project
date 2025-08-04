@@ -102,75 +102,21 @@
    
     <!--====== SUB PART ENDS ======-->
 
-    <!--====== ABOUT US PART START ======-->
+    <!--====== ABOUT US ======-->
       
     <section class="about-us-area">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="abuot-thumb">
-                        <img src="assets/images/about-thumb.jpg" alt="about">
-                        <div class="about-shape">
-                            <img src="assets/images/about-shape.png" alt="about">
-                        </div>
-                        <div class="about-icon">
-                            <i class="fas fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content ml-55">
-                        <span class=" wow fadeIn animated" data-wow-duration="2000ms" data-wow-delay="0ms">About Us</span>
-                        <h3 class="title wow fadeInRight animated" data-wow-duration="1000ms" data-wow-delay="100ms">We offer creative working place <br> & environments that suit your business</h3>
-                        <div class="about-info wow fadeInUp animated" data-wow-duration="1000ms" data-wow-delay="100ms">
-                            <h5 class="title">Rosalina D. William</h5>
-                            <span>Founder</span>
-                            <img src="assets/images/about-info.png" alt="about">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section> 
    
-    <!--====== ABOUT US PART ENDS ======-->
+    <!--====== ABOUT US ======-->
 
     <!--====== TOUR PART START ======-->
       
     <section class="tour-area pt-30">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-7">
-                    <div class="tour-thumb mt-20">
-                        <img src="assets/images/tour-1.jpg" alt="tour">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-5">
-                    <div class="tour-thumb mt-20">
-                        <img src="assets/images/tour-2.jpg" alt="tour">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="tour-thumb mt-20">
-                        <img src="assets/images/tour-4.jpg" alt="tour">
-                    </div>
-                </div>
-                <div class="col-lg-8 order-6 order-lg-5">
-                    <div class="tour-thumb mt-20">
-                        <img src="assets/images/tour-5.jpg" alt="tour">
-                        <div class="tour-overlay">
-                            <span>Make A Small Tour Here</span>
-                            <h3 class="title">Which grew nearly 9 percent over the previous year.</h3>
-                            <p>But an increased reliance on outsourcing wasn’t the only thing boosting Accenture, TCS, Cognizant, and Wipro to the top of the charts. “The top four invested significantly in enhancing their capabilities.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 order-5 order-lg-6">
-                    <div class="tour-thumb mt-20">
-                        <img src="assets/images/tour-6.jpg" alt="tour">
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </section> 
    
