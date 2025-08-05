@@ -200,32 +200,7 @@
             <img src="assets/images/fun-facts-thumb.html" alt="">
         </div>
     </section> 
-   
-    <!--====== FUN FACTS PART ENDS ======-->
-
-    <!--====== BENEFITS PART START ======-->
-      
-    <section class="benefits-area bg_cover" style="background-image: url(assets/images/benefits-bg.html);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="benefits-content text-center">
-                        <span>Your Benefits</span>
-                        <h3 class="title">The Top Four Outsourcers On Everest Group’s.</h3>
-                        <ul>
-                            <li><a class="main-btn main-btn-2" href="#">Book A Desk</a></li>
-                            <li><a class="main-btn main-btn-2" href="#">Take A Tour</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-   
-  
-   
-    <!--====== CALL PART ENDS ======-->
-
+ 
     <!--====== FOOTER PART START ======-->
    @include('Layout/Footer')
     <!--====== FOOTER PART ENDS ======-->
@@ -244,13 +219,6 @@
     </div>
     
     <!--====== GO TO TOP PART ENDS ======-->
-
-
-
-
-
-
-
 
     <!--====== jquery js ======-->
    
