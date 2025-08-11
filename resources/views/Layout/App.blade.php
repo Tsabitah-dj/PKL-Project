@@ -50,7 +50,7 @@
     <!--====== BANNER PART START ======-->
        
     <section style="margin-top: 200px;">
-        <div class="img" style="text-align: right;">
+        <div style="text-align: center;">
             <img src="assets/images/Garut.jpg" alt="" srcset="" style="display: inline-block; max-width: 100%; height: auto;">
             <div class="text">
                 <p>
