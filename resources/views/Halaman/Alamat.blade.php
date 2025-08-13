@@ -47,12 +47,16 @@
       @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
     
-    <!-- diisi sama address/alamat , ada gambar mapnya, -->
+    <!-- diisi sama address/alamat , harus ada gambar mapnya, -->
      <section>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card">
-              
+              <div class="card-header">Alamat</div>
+    
      </section>
-    <!-- diisi sama address/alamat , ada gambar mapnya, -->
+    <!-- diisi sama address/alamat , harus ada gambar mapnya, -->
+</body>
+
+</html>
