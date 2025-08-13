@@ -55,7 +55,7 @@
             <div class="card" style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Pembuatan KK (Kartu Keluarga)</h5>
+                <h5 class="card-title">Card Title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
               <div class="card-body">
@@ -69,7 +69,7 @@
             <div class="card" style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Perekaman Kartu Tanda Penduduk,(E-KTP)</h5>
+                <h5 class="card-title">Cards title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
               <div class="card-body">
@@ -83,7 +83,7 @@
             <div class="card" style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Surat Keterangan Pindah/Kedatangan Penduduk.</h5>
+                <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
               <div class="card-body">
@@ -97,7 +97,7 @@
             <div class="card" style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Surat Keterangan Tidak Mampu (SKTM)</h5>
+                <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
               <div class="card-body">
@@ -111,7 +111,7 @@
             <div class="card" style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Surat Keterangan Umum</h5>
+                <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
               <div class="card-body">
@@ -125,7 +125,7 @@
             <div class="card" style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Surat Keterangan Ahli Waris</h5>
+                <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               </div>
               <div class="card-body">

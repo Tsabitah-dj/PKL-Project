@@ -46,4 +46,13 @@
     <!--====== HEADER PART START ======-->
       @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
+
+    <!-- isi sama berita, beritanya terserah -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h2></h2> 
+      </section>
+    <!-- isi sama berita, beritanya terserah -->
     
