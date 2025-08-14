@@ -48,15 +48,35 @@
     <!--====== HEADER PART ENDS ======-->
     
     <!-- diisi sama address/alamat , harus ada gambar mapnya, -->
-     <section>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">Alamat</div>
-    
-     </section>
+    <section class="py-5 mt-5">
+        <div class="container-fluid px-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-success mb-25">
+                        <div class="card-header bg-transparent border-success">
+                            <h4 class="mb-0">Alamat Kami</h4>
+                        </div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title">Lokasi Kantor</h5>
+                            <p class="card-text">Jl. Suherman No.22, Tarogong, Kec. Tarogong Kidul, Kabupaten Garut, Jawa Barat 44151</p>
+                            <div class="mt-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.123456789!2d107.1234567!3d-7.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5b8e5b8e5b8%3A0x5b8e5b8e5b8e5b8e!2sJl.%20Suherman%20No.22%2C%20Tarogong%2C%20Kec.%20Tarogong%20Kidul%2C%20Kabupaten%20Garut%2C%20Jawa%20Barat%2044151!5e0!3m2!1sid!2sid!4v1234567890123!5m2!1sid!2sid" 
+                                        width="100%" 
+                                        height="300" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent border-success">
+                            <small class="text-muted">Hubungi kami untuk informasi lebih lanjut</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- diisi sama address/alamat , harus ada gambar mapnya, -->
 </body>
 
-</html>

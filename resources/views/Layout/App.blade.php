@@ -102,15 +102,16 @@
    
     <!--====== SUB PART ENDS ======-->
 
-    <!--====== ABOUT US ======-->
+<!--====== Tentang/About Kantornya buat di sini ======-->
       
-    <section class="about-us-area">
+    <section class="about" id="tentang">
         <div class="container">
-            
+            <h2>Tentang</h2>
+            <p>Cari Dulu Informasinya</p>
         </div>
     </section> 
    
-    <!--====== ABOUT US ======-->
+   <!--====== Tentang/About Kantornya buat di sini ======-->
 
     <!--====== TOUR PART START ======-->
       
@@ -122,84 +123,7 @@
    
     <!--====== TOUR PART ENDS ======-->
 
-    <!--====== FUN FACTS PART START ======-->
-      
-    <section class="fun-facts pb-120">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="fun-facts-content">
-                        <span>Fun Facts</span>
-                        <h2 class="title">Community where everyone is welcome.</h2>
-                    </div>
-                    <div class="skill-area">
-                        <div class="skills">
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <h3 class="skill-title">UX Design</h3>
-                                    <div class="skill-percentage">
-                                        <div class="count-box"><span class="count-text" data-speed="2100" data-stop="95">0</span>%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="bar-inner">
-                                        <div class="bar progress-line" data-width="95"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <h3 class="skill-title">Web Development</h3>
-                                    <div class="skill-percentage">
-                                        <div class="count-box"><span class="count-text" data-speed="2000" data-stop="90">0</span>%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="bar-inner">
-                                        <div class="bar progress-line" data-width="90"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <h3 class="skill-title">Marketing & Strategy</h3>
-                                    <div class="skill-percentage">
-                                        <div class="count-box"><span class="count-text" data-speed="1900" data-stop="70">0</span>%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="bar-inner">
-                                        <div class="bar progress-line" data-width="70"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <h3 class="skill-title">Consultancy </h3>
-                                    <div class="skill-percentage">
-                                        <div class="count-box"><span class="count-text" data-speed="1900" data-stop="75">0</span>%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="bar-inner">
-                                        <div class="bar progress-line" data-width="75"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="fun-facts-thumb">
-            <img src="assets/images/fun-facts-thumb.html" alt="">
-        </div>
-    </section> 
+    
  
     <!--====== FOOTER PART START ======-->
    @include('Layout/Footer')

@@ -16,7 +16,7 @@
                                 <!-- sub menu -->
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('Halaman.Tentang')}}">Tentang</a>
+                                <a class="nav-link" href="{{route('Beranda')}}#tentang">Tentang</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{{route('Halaman.Pelayanan')}}">Pelayanan</a>
