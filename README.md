@@ -6,3 +6,4 @@ ATTENTION!!!!
 
 3. JALANKAN TERLEBIH DAHULU composer update DAN php artisan key:generate SEBELUM MELAKUKAN php artisan serve
 
+Tulis kode Di bawah tg comen yang udah ada
