@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Gairol - Coworking and Creative Space HTML Template</title>
+    <title>Kantor Kecamatan Tarogong Kaler</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href=" {{asset('assets/images/favicon.png')}}" type="image/png">
@@ -49,18 +49,15 @@
     
     <!--====== BANNER PART START ======-->
        
-    <section style="margin-top: 200px;">
+    <section style="margin-top: 20px;">
+        <img src="assets/images/Garutkbt.jpg" alt="Garutkbt" style="width: 100%; height: auto;">
         <div style="text-align: center;">
-            <img src="assets/images/Garut.jpg" alt="" srcset="" style="display: inline-block; max-width: 100%; height: auto;">
-            <div class="text">
-                <p>
-                </p>
-            </div>
-            </div>
-    </section> 
+            <p>SELAMAT DATANG</p>
+        </div>
+    </section>
 
     <!--====== SUB PART START ======-->
-      
+
     <section class="sub-area">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
@@ -98,20 +95,10 @@
                 </div>
             </div>
         </div>
-    </section> 
-   
+    </section>
+
     <!--====== SUB PART ENDS ======-->
 
-<!--====== Tentang/About Kantornya buat di sini ======-->
-      
-    <section class="about" id="tentang">
-        <div class="container">
-            <h2>Tentang</h2>
-            <p>Cari Dulu Informasinya</p>
-        </div>
-    </section> 
-   
-   <!--====== Tentang/About Kantornya buat di sini ======-->
 
     <!--====== TOUR PART START ======-->
       

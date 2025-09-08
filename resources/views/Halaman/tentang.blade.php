@@ -12,31 +12,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Alamat</title>
+    <title>Tentang</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/all.css') }}">
 
     <!--====== animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/slick.css') }}">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/default.css') }}">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 
 </head>
@@ -46,12 +46,31 @@
     <!--====== HEADER PART START ======-->
       @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
-    
-    <!-- diisi sama address/alamat , harus ada gambar mapnya, -->
-    <section class="py-5 mt-5">
 
-    <h1 style="color: #FFFFFF;">Steam hopper</h1>
-        <div class="container-fluid px-4">
+    <!--====== Tentang/About Kantornya buat di sini ======-->
+      <section class="py-5 mt-5">
+       <h3 class="text-left display-5 mt-5">Sejarah</h3>
+       <p>
+        Cari dulu Informasinya
+       </p>
+
+        <h3 class="text-left display-5 mt-5">Visi Dan Misi</h3>
+       <p>
+        Cari dulu Informasinya
+       </p>
+
+        <h3 class="text-left display-5 mt-5">Sejarah</h3>
+       <p>
+        Cari dulu Informasinya
+       </p>
+
+        <h3 class="text-left display-5 mt-5">Struktur Pemerintahan</h3>
+       <p>
+        Cari dulu Informasinya
+       </p>
+
+       <h3 class="text-left display-5 mt-5">Alamat</h3>
+       <div class="container-fluid px-4">
             <div class="row">
                 <div class="col-12">
                     <div class="card border-success mb-25">
@@ -78,7 +97,5 @@
                 </div>
             </div>
         </div>
+       
     </section>
-    <!-- diisi sama address/alamat , harus ada gambar mapnya, -->
-</body>
-
