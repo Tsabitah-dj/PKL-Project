@@ -43,6 +43,7 @@ class PelayananResource extends Resource
             'index' => ListPelayanans::route('/'),
             'create' => CreatePelayanan::route('/create'),
             'edit' => EditPelayanan::route('/{record}/edit'),
+           
         ];
     }
 }
