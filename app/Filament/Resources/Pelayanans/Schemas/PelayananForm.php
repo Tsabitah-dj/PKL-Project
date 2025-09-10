@@ -14,6 +14,9 @@ class PelayananForm
             ->components([
                 FileUpload::make('gambar')
                    ->image()
+                   ->directory('pelayanan') // otomatis simpan di storage/app/public/pelayanan
+                   ->disk('public')         // simpan ke disk public
+                    ->maxSize(2048)
                    ->required(),
                 TextInput::make('nama_pelayanan')
                    ->required(),

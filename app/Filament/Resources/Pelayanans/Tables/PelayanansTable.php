@@ -15,7 +15,10 @@ class PelayanansTable
     {
         return $table
             ->columns([
-                ImageColumn::make('gambar'),
+                ImageColumn::make('gambar')
+                    ->disk('')
+                    ->square()
+                    ->size(60),
                 TextColumn::make('nama_pelayanan')
                     ->searchable(),
                 TextColumn::make('created_at')
