@@ -49,12 +49,31 @@
     
     <!--====== BANNER PART START ======-->
        
-    <section style="margin-top: 20px;">
-        <img src="assets/images/Garutkbt.jpg" alt="Garutkbt" style="width: 100%; height: auto;">
-        <div style="text-align: center;">
-            <p>SELAMAT DATANG</p>
-        </div>
-    </section>
+  <section style="margin-top: 20px; position: relative; color: white;">
+    <img src="assets/images/Garutkbt.jpg" alt="Garutkbt" style="width: 100%; height: auto;">
+
+     <!-- Overlay transparan -->
+    <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); /* hitam transparan (0.4 = 40%) */
+    "></div>
+
+    <div style="
+        position: absolute;
+        bottom: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    ">
+        <h1 style="font-size: 48px; font-weight: bold; color: white;">SELAMAT DATANG Di KANTOR KECAMATAN TARKAL</h1>
+
+    </div>
+</section>
+
 
     <!--====== SUB PART START ======-->
 

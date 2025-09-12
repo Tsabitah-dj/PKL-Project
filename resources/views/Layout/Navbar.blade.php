@@ -16,7 +16,7 @@
                                 <!-- sub menu -->
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('Halaman.tentang')}}">Tentang</a>
+                                <a class="nav-link active" href="{{route('Halaman.tentang')}}">Tentang</a>
                                 <ul class="sub-menu">
                                     <li><a href="{{route('Halaman.tentang')}}#sejarah">Sejarah</a></li>
                                     <li><a href="{{route('Halaman.tentang')}}#visi dan misi">Visi dan Misi</a></li>
@@ -25,7 +25,7 @@
                                 </ul> <!-- sub menu -->
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{route('Halaman.Pelayanan')}}">Pelayanan</a>
+                                <a class="nav-link active" href="{{route('Halaman.Pelayanan')}}">Pelayanan</a>
                             </li>
                           
                             <li class="nav-item">

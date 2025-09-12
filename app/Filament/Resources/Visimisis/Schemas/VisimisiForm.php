@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Filament\Resources\Pelayanans\Schemas;
+namespace App\Filament\Resources\Visimisis\Schemas;
 
-use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Schemas\Schema;
 
-class PelayananForm
+class VisimisiForm
 {
     public static function configure(Schema $schema): Schema
     {
         return $schema
             ->components([
-                TextInput::make('nama_pelayanan')
-                   ->required(),
+                TextInput::make('Judul')
+                    ->required(),
                 Textarea::make('deskripsi')
-                   ->required(),
+                    ->required()
+                    ->columnSpanFull(),
             ]);
     }
 }

@@ -38,6 +38,11 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle JS (sudah ada Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 
 </head>
 
@@ -48,24 +53,48 @@
     <!--====== HEADER PART ENDS ======-->
     
     <!-- Diisi sama Pelayanan yang Yang Ada Dari panel admin -->
-     <section style="margin-top: 200px;">
-      <div class="container">
-        <div class="row">
-          @foreach($pelayanans as $pelayanan)
-          <div class="col-md-4 mb-4">
-            
-              <div class="card-body">
-                <h5 class="card-title">{{ $pelayanan->nama_pelayanan }}</h5>
-                <p class="card-text">Deskripsi pelayanan</p>
-              </div>
-              <div class="card-body">
-                <a href="#" class="card-link">Lihat Detail</a>
-                <a href="#" class="card-link">Hubungi Kami</a>
-              </div>
-            
+       <section style="margin-top: 200px;">
+  <div class="container">
+    <div class="row">
+      @foreach($pelayanans as $pelayanan)
+      <div class="col-md-4 mb-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ $pelayanan->nama_pelayanan }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Deskripsi</h6>
+
+            {{-- tampilkan hanya 100 karakter --}}
+            <p class="card-text">
+              {{ Str::limit($pelayanan->deskripsi, 100) }}
+            </p>
+
+            {{-- tombol lihat selengkapnya --}}
+            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#deskripsiModal{{ $pelayanan->id }}">
+              Lihat Syarat-Syarat
+            </a>
           </div>
-          @endforeach
-     </section>
+        </div>
+      </div>
+
+      {{-- Modal --}}
+      <div class="modal fade" id="deskripsiModal{{ $pelayanan->id }}" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">{{ $pelayanan->nama_pelayanan }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              {!! nl2br(e($pelayanan->deskripsi)) !!}
+            </div>
+          </div>
+        </div>
+      </div>
+      @endforeach
+    </div>
+  </div>
+</section>
+
     <!-- Diisi sama Pelayanan Yang Ada dari panel admin -->
      
 </body>

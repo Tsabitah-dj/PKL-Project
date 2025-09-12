@@ -48,11 +48,24 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!-- isi sama berita, beritanya terserah -->
-      <section>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8">
-              <h2></h2> 
-      </section>
+      <section style="margin-top: 200px;">
+    <div class="container">
+        <div class="row">
+            @foreach($beritas as $berita)
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ asset('storage/' . $berita->foto) }}" class="card-img-top" alt="{{ $berita->judul }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $berita->judul }}</h5>
+                            <p class="card-text">{{ Str::limit($berita->deskripsi, 100) }}</p>
+                            <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+ 
     <!-- isi sama berita, beritanya terserah -->
     

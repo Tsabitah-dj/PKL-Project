@@ -1,23 +1,22 @@
 <?php
 
-namespace App\Filament\Resources\Pelayanans\Tables;
+namespace App\Filament\Resources\Visimisis\Tables;
 
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Table;
 
-class PelayanansTable
+class VisimisisTable
 {
     public static function configure(Table $table): Table
     {
         return $table
             ->columns([
-                TextColumn::make('nama_pelayanan')
+                TextColumn::make('Judul')
                     ->searchable(),
-                 TextColumn::make('deskripsi')
+                TextColumn::make('deskripsi')
                     ->wrap() // ← tetap TextColumn, meskipun form pakai Textarea
                     ->limit(225) // biar tidak kepanjangan di tabel
                     ->toggleable(),

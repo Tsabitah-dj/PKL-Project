@@ -38,7 +38,6 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-
 </head>
 
 <body>
@@ -55,11 +54,6 @@
        </p>
 
         <h3 class="text-left display-5 mt-5">Visi Dan Misi</h3>
-       <p>
-        Cari dulu Informasinya
-       </p>
-
-        <h3 class="text-left display-5 mt-5">Sejarah</h3>
        <p>
         Cari dulu Informasinya
        </p>
