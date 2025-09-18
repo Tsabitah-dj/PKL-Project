@@ -69,7 +69,7 @@
         transform: translateX(-50%);
         text-align: center;
     ">
-        <h1 style="font-size: 48px; font-weight: bold; color: white;">SELAMAT DATANG Di KANTOR</h1>
+        <h1 style="font-size: 48px; font-weight: bold; color: white;">SELAMAT DATANG </h1>
 
     </div>
 </section>
