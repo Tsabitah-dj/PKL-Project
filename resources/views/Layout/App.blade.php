@@ -152,46 +152,47 @@
 
     <!--====== jquery js ======-->
    
-    <script src="{{asset('assets/js/vendor/modernizr-3.6.0.min.html')}}""></script>
-    <script src=" {{asset('assets/js/vendor/jquery-1.12.4.min.html')}}""></script>
+    <script src="{{asset('assets/js/vendor/modernizr-3.6.0.min.html')}}"></script>
+    <script src=" {{asset('assets/js/vendor/jquery-1.12.4.min.html')}}"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="{{asset('assets/js/bootstrap.min.html')}}""></script>
-    <script src="  {{asset('assets/js/popper.min.html')}}""></script>
+    <script src="{{asset('assets/js/bootstrap.min.html')}}"></script>
+    <script src="  {{asset('assets/js/popper.min.html')}}"></script>
 
     <!--====== Slick js ======-->
-    <script src="{{asset('assets/js/slick.min.html')}}""></script>
+    <script src="{{asset('assets/js/slick.min.html')}}"></script>
 
     <!--====== Isotope js ======-->
-    <script src="{{asset('assets/js/isotope.pkgd.min.html')}}""></script>
+    <script src="{{asset('assets/js/isotope.pkgd.min.html')}}"></script>
 
     <!--====== appear js ======-->
-    <script src="{{asset('assets/js/jquery.appear.min.html')}}""></script>
+    <script src="{{asset('assets/js/jquery.appear.min.html')}}"></script>
 
     <!--====== counterup js ======-->
-    <script src=" {{asset('assets/js/jquery.counterup.min.html')}}""></script>
+    <script src=" {{asset('assets/js/jquery.counterup.min.html')}}"></script>
 
     
     <!--====== wow js ======-->
-    <script src=" {{asset('assets/js/wow.min.html')}}""></script>
+    <script src=" {{asset('assets/js/wow.min.html')}}"></script>
 
     <!--====== circle progress js ======-->
-    <script src="{{asset('assets/js/circle-progress.min.html')}}""></script>
+    <script src="{{asset('assets/js/circle-progress.min.html')}}"></script>
 
     <!--====== waypoints js ======-->
-    <script src="{{asset('assets/js/waypoints.min.html')}}""></script>
+    <script src="{{asset('assets/js/waypoints.min.html')}}"></script>
 
     <!--====== Images Loaded js ======-->
-    <script src="  {{asset('assets/js/imagesloaded.pkgd.min.html')}}""></script>
+    <script src="  {{asset('assets/js/imagesloaded.pkgd.min.html')}}"></script>
 
     <!--====== Magnific Popup js ======-->
-    <script src="{{asset('assets/js/jquery.magnific-popup.min.html')}}""></script>
+    <script src="{{asset('assets/js/jquery.magnific-popup.min.html')}}"></script>
 
     <!--====== Ajax Contact js ======-->
-    <script src="{{asset('assets/js/ajax-contact.html')}}""></script>
+    <script src="{{asset('assets/js/ajax-contact.html')}}"></script>
 
     <!--====== Main js ======-->
-    <script src=" {{asset('assets/js/main.html')}}""></script>
+    <script src=" {{asset('assets/js/main.html')}}"></script>
+
 
 </body>
 

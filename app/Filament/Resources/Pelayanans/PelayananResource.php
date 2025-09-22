@@ -20,6 +20,10 @@ class PelayananResource extends Resource
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
+    protected static ?string $navigationLabel = 'Pelayanan';
+
+    protected static string|\UnitEnum|null $navigationGroup = 'Konten Website';
+
     public static function form(Schema $schema): Schema
     {
         return PelayananForm::configure($schema);

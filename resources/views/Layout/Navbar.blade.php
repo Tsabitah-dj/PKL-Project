@@ -27,11 +27,10 @@
                                 Tentang
                             </a>
                             <ul class="sub-menu">
-                                <li><a href="{{ route('Halaman.tentang') }}#sejarah">Sejarah</a></li>
                                 <li><a href="{{ route('Halaman.tentang') }}#visi-dan-misi">Visi dan Misi</a></li>
-                                <li><a href="{{ route('Halaman.tentang') }}#struktur-pemerintahan">Struktur
-                                        Pemerintahan</a></li>
+                                <li><a href="{{ route('Halaman.tentang') }}#struktur-pemerintahan">Struktur Organisasi</a></li>
                                 <li><a href="{{ route('Halaman.tentang') }}#alamat">Alamat</a></li>
+                                <li><a href="{{ route('Halaman.tentang') }}#desa">Desa</a></li>
                             </ul>
                         </li>
 
@@ -48,25 +47,40 @@
                                 Berita
                             </a>
                         </li>
+            
+                         <li class="nav-item">
+    <a class="nav-link {{ request()->routeIs('#') ? 'active' : '' }}"
+        href="#">
+        @auth
+           <span class="user-avatar">
+                {{ strtoupper(substr(auth()->user()->name, 0, 1)) }}
+            </span>
+        @else
+            Masuk
+        @endauth
+    </a>
+    <ul class="sub-menu">
+        @guest
+            {{-- kalau belum login --}}
+            <li><a href="{{ route('login') }}">Login</a></li>
+            <li><a href="{{ route('register') }}">Register</a></li>
+        @endguest
 
-                        <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('Halaman.Alamat') ? 'active' : '' }}"
-                                href="{{ route('Halaman.Alamat') }}">
-                                Alamat
-                            </a>
-                        </li>
+        @auth
+            {{-- kalau sudah login --}}
+            <li>
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="dropdown-item">Logout</button>
+                </form>
+            </li>
+        @endauth
+    </ul>
+</li>
 
                     </ul>
                 </div> <!-- navbar collapse -->
-                <div class="navbar-social ">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
+              
             </nav>
         </div> <!-- navigation -->
     </div>

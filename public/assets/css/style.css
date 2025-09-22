@@ -5544,3 +5544,20 @@ p {
 .img .text {
   margin-left: 20px;
 }
+
+.user-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;   /* putih */
+    color: #000;              /* hitam */
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    border: 1px solid #ccc;   /* opsional: kasih border abu biar keliatan */
+}
+

@@ -48,19 +48,28 @@
 
     <!--====== Tentang/About Kantornya buat di sini ======-->
       <section class="py-5 mt-5">
-       <h3 class="text-left display-5 mt-5">Sejarah</h3>
+        <h3 class="text-left display-5 mt-5 mb-4">VISI DAN MISI</h3>
        <p>
-        Cari dulu Informasinya
+           <h4 style="padding-left: 20px;">Visi Dan Misi Kecamatan Tarogong Kaler</h4>
+            <h5  style="color: black; padding-left: 20px;">Visi Kecamatan Tarogong Kaler, Garut adalah "Terwujudnya Kecamatan Tarogong Kaler yang unggul,
+                berdaya Saing, dan sejahtera" dengan visi misi mendukungnya seperti meningkatkan kualitas SDM,
+                infraksrtuktur, dan perekonomian. Berikut adalah Detail lebih Lanjut :</h5>
+            <h4 style=" padding-left: 20px;">VISI :</h4>
+            <h5  style="color: black; padding-left: 20px;"> "Terwujudnya Kecamatan Tarogong Kaler Yang unggul,
+                berdaya Saing, Dan sejahtera"</h5>
+
+            <h4 style="padding-left: 20px;"> MISI :</h4>
+            <h5  style="color: black; padding-left: 20px;">-Meningkatkan kualitas Sumber Daya Manusia (SDM): yang beriman, berpengetahuan, dan berakhlak mulia.</h5>
+            <h5 style="color: black; padding-left: 20px;"> -Meningkatkan kualitas infrastruktur: yang memadai dan terintegrasi.</h5>
+            <h5 style="color: black; padding-left: 20px;"> -Meningkatkan perekonomian masyarakat yang mandiri dan berkelanjutan.</h5>
+            <h5  style="color: black; padding-left: 20px;">-Meningkatkan pelayanan publik: yang berkualitas dan efisien.</h5>
+            <h5 style="color: black; padding-left: 20px;"> -Meningkatkan partisipasi masyarakat: dalam pembangunan daerah.</h5>
+            <h5 style="color: black; padding-left: 20px;"> -Mewujudkan tata kelola pemerintahan yang baik dan bersih.</h5>
        </p>
 
-        <h3 class="text-left display-5 mt-5">Visi Dan Misi</h3>
-       <p>
-        Cari dulu Informasinya
-       </p>
-
-        <h3 class="text-left display-5 mt-5">Struktur Pemerintahan</h3>
-       <p>
-        Cari dulu Informasinya
+       <h3 class="text-left display-5 mt-5 mb-4">STRUKTUR ORGANISASI</h3>
+       <p class="text-center">
+        <img src="{{asset("assets/images/struktur organisasi kec. tarkal.jpg")}}" alt="" class="img-fluid">
        </p>
 
        <h3 class="text-left display-5 mt-5">Alamat</h3>
