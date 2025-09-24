@@ -56,7 +56,7 @@
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset('storage/' . $berita->foto) }}" class="card-img-top" alt="{{ $berita->judul }}">
                         <div class="card-body">
-                            <h5 class="card-title">{{ $berita->judul }}</h5>
+                            <h5 class="card-title ">{{ $berita->judul }}</h5>
                             <p class="card-text">{{ Str::limit($berita->deskripsi, 100) }}</p>
                             <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
                         </div>
