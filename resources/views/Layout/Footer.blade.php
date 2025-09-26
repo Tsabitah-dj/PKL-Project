@@ -1,27 +1,47 @@
 <!--====== FOOTER PART START ======-->
 
- <section>
-       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#072475ff" fill-opacity="1" d="M0,64L17.1,64C34.3,64,69,64,103,96C137.1,128,171,192,206,224C240,256,274,256,309,218.7C342.9,181,377,107,411,101.3C445.7,96,480,160,514,186.7C548.6,213,583,203,617,202.7C651.4,203,686,213,720,213.3C754.3,213,789,203,823,176C857.1,149,891,107,926,106.7C960,107,994,149,1029,186.7C1062.9,224,1097,256,1131,256C1165.7,256,1200,224,1234,218.7C1268.6,213,1303,235,1337,229.3C1371.4,224,1406,192,1423,176L1440,160L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path></svg>
-    </section> 
+<section>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#072475ff" fill-opacity="1" d="M0,64L17.1,64C34.3,64,69,64,103,96C137.1,128,171,192,206,224C240,256,274,256,309,218.7C342.9,181,377,107,411,101.3C445.7,96,480,160,514,186.7C548.6,213,583,203,617,202.7C651.4,203,686,213,720,213.3C754.3,213,789,203,823,176C857.1,149,891,107,926,106.7C960,107,994,149,1029,186.7C1062.9,224,1097,256,1131,256C1165.7,256,1200,224,1234,218.7C1268.6,213,1303,235,1337,229.3C1371.4,224,1406,192,1423,176L1440,160L1440,320L1422.9,320C1405.7,320,1371,320,1337,320C1302.9,320,1269,320,1234,320C1200,320,1166,320,1131,320C1097.1,320,1063,320,1029,320C994.3,320,960,320,926,320C891.4,320,857,320,823,320C788.6,320,754,320,720,320C685.7,320,651,320,617,320C582.9,320,549,320,514,320C480,320,446,320,411,320C377.1,320,343,320,309,320C274.3,320,240,320,206,320C171.4,320,137,320,103,320C68.6,320,34,320,17,320L0,320Z"></path>
+  </svg>
+</section>
+
+<footer class="footer-area text-white pt-5 pb-4" style="background-color: #072475ff;">
+  <div class="container">
+    <div class="row align-items-center">
       
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4"></p>
-                        <a href="#"><i class="fal fa-arrow-right"></i> Contact Us</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-item-3 mt-30">
-                        <div class="footer-title">
-                            <h3 class="title">Photo Showcase.</h3>
-                        </div>
-                        <ul>
-                           
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> 
-   
-    <!--====== FOOTER PART ENDS ======-->
+      <!-- Kontak (Kiri) -->
+     <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3">Kontak</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fab fa-facebook me-2"></i> Facebook: <a href="#" class="text-white">Pemkab Garut</a></li>
+          <li class="mb-2"><i class="fab fa-instagram me-2"></i> Instagram: <a href="#" class="text-white">@pemkabgarut</a></li>
+          <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Alamat: Jl. Raya Tarogong, Garut</li>
+          <li class="mb-2"><i class="fas fa-phone me-2"></i> Telp: (0262) 123456</li>
+        </ul>
+      </div>
+      
+      <!-- Foto (Kanan) -->
+      <div class="col-lg-6 col-md-6 text-center">
+        <h5 class="mb-3">Foto Showcase</h5>
+          <div class="d-flex flex-wrap gap-2 justify-content-end">
+        <img src="{{ asset('assets/images/Garut.jpg') }}" alt="Foto Showcase"
+             class="img-fluid rounded shadow"
+             style="max-width: 250px; height: auto;">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Garis pemisah -->
+    <hr class="border-light">
+
+  <div class="row">
+      <div class="col-12 text-center mt-4">
+        <p class="mb-0" style="color: white">&copy; {{ date('Y') }} Kabupaten Garut. Created by <strong>PPLG, SMKN 1 GRT (TAR)</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--====== FOOTER PART ENDS ======-->

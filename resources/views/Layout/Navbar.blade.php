@@ -1,10 +1,15 @@
 <header class="header-area">
     <div class="header-nav">
         <div class="navigation">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="navbar-brand" href="{{ route('Beranda') }}">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand" href="{{ route('Beranda') }}" style="display: flex; align-items: center;">
                     <img src="{{ asset('assets/images/Garut.jpg') }}" alt="Logo"
-                        style="width: 80px; height: auto;">
+                        style="width: 60px; height: auto; margin-right: 10px;">
+                        <div>
+                           <p class="mb-0 fw-bold" style="font-size: 14px; color: white;">Pemerintah Kab. Garut</p>
+
+                            <h6 class="mb-0" style="font-size: 12px; color: rgb(233, 231, 229); ">KECAMATAN TAROGONG KALER</h6>
+                        </div>
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -26,7 +31,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('Halaman.tentang') ? 'active' : '' }}"
-                                href="{{ route('Halaman.tentang') }}">
+                                href="#">
                                 Tentang
                             </a>
                             <ul class="sub-menu">

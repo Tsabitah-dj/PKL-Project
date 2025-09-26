@@ -1,8 +1,5 @@
 <!doctype html>
 <html lang="en">
-
-
-<!-- Mirrored from html.webtend.net/gairol/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 Jul 2025 01:14:41 GMT -->
 <head>
 
     <!--====== Required meta tags ======-->
@@ -12,31 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Kantor Kecamatan Tarogong Kaler</title>
+    <title>Kecamatan Tarogong Kaler</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href=" {{asset('assets/images/favicon.png')}}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('assets/images/Garut.jpg') }}" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="{{asset('assets/css/all.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/all.css') }}">
 
     <!--====== animate css ======-->
-    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/slick.css') }}">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/default.css') }}">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 
 </head>
@@ -50,7 +47,7 @@
     <!--====== BANNER PART START ======-->
        
   <section style="margin-top: 20px; position: relative; color: white;">
-    <img src="assets/images/Garutkbt.jpg" alt="Garutkbt" style="width: 100%; height: auto;">
+    <img src="{{ asset('assets/images/Garutkbt.jpg') }}" alt="Garutkbt" style="width: 100%; height: auto;">
 
      <!-- Overlay transparan -->
     <div style="
@@ -74,63 +71,10 @@
     </div>
 </section>
 
+    <!--====== BIDANG ======-->   
+  @include('Layout/Bidang')
+    <!--====== BIDANG ======-->
 
-    <!--====== SUB PART START ======-->
-
-    <section class="sub-area">
-        <div class="container-fluid p-0">
-            <div class="row no-gutters">
-                <div class="col-lg-3 col-md-6">
-                    <div class="sub-item text-center">
-                        <img src="assets/images/sub-1.png" alt="sub">
-                        <h4 class="title">Unlimited Connection</h4>
-                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
-                        <a href="#"><i class="far fa-plus"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="sub-item text-center">
-                        <img src="assets/images/sub-2.png" alt="sub">
-                        <h4 class="title">Exist Phone Booth</h4>
-                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
-                        <a href="#"><i class="far fa-plus"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="sub-item text-center">
-                        <img src="assets/images/sub-3.png" alt="sub">
-                        <h4 class="title">Fresh Food & Fruits</h4>
-                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
-                        <a href="#"><i class="far fa-plus"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="sub-item text-center">
-                        <img src="assets/images/sub-4.png" alt="sub">
-                        <h4 class="title">Global Access</h4>
-                        <p>The top four outsourcers on Everest Group’s annual ranking of the top IT service providers has remained unchanged.</p>
-                        <a href="#"><i class="far fa-plus"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--====== SUB PART ENDS ======-->
-
-
-    <!--====== TOUR PART START ======-->
-      
-    <section class="tour-area pt-30">
-        <div class="container">
-            
-        </div>
-    </section> 
-   
-    <!--====== TOUR PART ENDS ======-->
-
-    
- 
     <!--====== FOOTER PART START ======-->
    @include('Layout/Footer')
     <!--====== FOOTER PART ENDS ======-->
@@ -151,51 +95,51 @@
     <!--====== GO TO TOP PART ENDS ======-->
 
     <!--====== jquery js ======-->
-   
-    <script src="{{asset('assets/js/vendor/modernizr-3.6.0.min.html')}}"></script>
-    <script src=" {{asset('assets/js/vendor/jquery-1.12.4.min.html')}}"></script>
+
+    <script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="{{asset('assets/js/bootstrap.min.html')}}"></script>
-    <script src="  {{asset('assets/js/popper.min.html')}}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
 
     <!--====== Slick js ======-->
-    <script src="{{asset('assets/js/slick.min.html')}}"></script>
+    <script src="{{ asset('assets/js/slick.min.js') }}"></script>
 
     <!--====== Isotope js ======-->
-    <script src="{{asset('assets/js/isotope.pkgd.min.html')}}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
 
     <!--====== appear js ======-->
-    <script src="{{asset('assets/js/jquery.appear.min.html')}}"></script>
+    <script src="{{ asset('assets/js/jquery.appear.min.js') }}"></script>
 
     <!--====== counterup js ======-->
-    <script src=" {{asset('assets/js/jquery.counterup.min.html')}}"></script>
+    <script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
 
-    
+
     <!--====== wow js ======-->
-    <script src=" {{asset('assets/js/wow.min.html')}}"></script>
+    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
 
     <!--====== circle progress js ======-->
-    <script src="{{asset('assets/js/circle-progress.min.html')}}"></script>
+    <script src="{{ asset('assets/js/circle-progress.min.js') }}"></script>
 
     <!--====== waypoints js ======-->
-    <script src="{{asset('assets/js/waypoints.min.html')}}"></script>
+    <script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
 
     <!--====== Images Loaded js ======-->
-    <script src="  {{asset('assets/js/imagesloaded.pkgd.min.html')}}"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
 
     <!--====== Magnific Popup js ======-->
-    <script src="{{asset('assets/js/jquery.magnific-popup.min.html')}}"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
 
     <!--====== Ajax Contact js ======-->
-    <script src="{{asset('assets/js/ajax-contact.html')}}"></script>
+    <script src="{{ asset('assets/js/ajax-contact.js') }}"></script>
 
     <!--====== Main js ======-->
-    <script src=" {{asset('assets/js/main.html')}}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
-
-<!-- Mirrored from html.webtend.net/gairol/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 31 Jul 2025 01:14:41 GMT -->
 </html>

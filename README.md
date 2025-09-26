@@ -9,3 +9,5 @@ ATTENTION!!!!
 Tulis kode Di bawah tg comen yang udah ada
 
 beberapa data di tulisnya di admin panel
+
+T,A,R

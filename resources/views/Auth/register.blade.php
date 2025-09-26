@@ -10,6 +10,12 @@
 
 <div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
   <div class="card shadow p-4" style="width: 400px; border-radius: 15px;">
+
+      <img src="{{ asset('assets/images/Garut.jpg') }}" 
+     alt="User Logo" 
+     class="mx-auto mb-3 d-block"
+     style="width: 70px; height: auto; object-fit: cover;">
+
     <h3 class="text-center mb-4">Register</h3>
     
     @if ($errors->any())
@@ -37,6 +43,9 @@
       <div class="mb-3">
         <label for="password" class="form-label">Password</label>
         <input type="password" class="form-control" name="password" id="password" required>
+         <button type="button" class="btn btn-outline-secondary" onclick="togglePassword()">
+            <i class="bi bi-eye" id="toggleIcon"></i>
+          </button>
       </div>
 
       <div class="mb-3">
@@ -52,6 +61,22 @@
     </p>
   </div>
 </div>
+
+<script>
+  function togglePassword() {
+    const passwordInput = document.getElementById("password");
+    const toggleIcon = document.getElementById("toggleIcon");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      toggleIcon.classList.remove("bi-eye");
+      toggleIcon.classList.add("bi-eye-slash");
+    } else {
+      passwordInput.type = "password";
+      toggleIcon.classList.remove("bi-eye-slash");
+      toggleIcon.classList.add("bi-eye");
+    }
+  }
+  </script>
 
 </body>
 </html>
