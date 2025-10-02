@@ -36,6 +36,9 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
+    <!--====== Custom css ======-->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
 
 </head>
 

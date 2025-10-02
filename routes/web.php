@@ -9,6 +9,8 @@ use App\Http\Controllers\tentangController;
 use App\Http\Controllers\PelayananController;
 use App\Http\Controllers\AlamatController;
 use App\Http\Controllers\AppController;
+use App\Http\Controllers\KomentarController;
+
 
 Route::get('/', function () {
     return view('Beranda');
@@ -17,9 +19,11 @@ Route::get('/', function () {
 
 Route::get('/', [AppController::class, 'index'])->name('Beranda');
 Route::get('/berita', [BeritaController::class, 'index'])->name('Halaman.Berita');
+Route::post('/berita/{id}/like', [BeritaController::class, 'like'])->name('berita.like');
 Route::get('/tentang', [tentangController::class, 'index'])->name('Halaman.tentang');
 Route::get('/pelayanan', [PelayananController::class, 'index'])->name('Halaman.Pelayanan');
 Route::get('/Alamat', [AlamatController::class, 'index'])->name('Halaman.Alamat');
+Route::post('/berita/{id}/komentar', [KomentarController::class, 'store'])->name('komentar.store');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');

@@ -37,6 +37,9 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!--====== Custom css ======-->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -51,19 +54,31 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!-- isi sama berita, beritanya terserah -->
-      <section style="margin-top: 200px;">
+     <section style="margin-top: 200px;">
   <div class="container">
     <div class="row">
       @foreach($beritas as $berita)
         <div class="col-md-4 mb-4">
-          <div class="card" style="width: 18rem;">
-            <img src="{{ asset('storage/' . $berita->foto) }}" class="card-img-top" alt="{{ $berita->judul }}">
-            <div class="card-body">
-              <h5 class="card-title">{{ $berita->judul }}</h5>
-              <p class="card-text">{{ Str::limit($berita->deskripsi, 100) }}</p>
+          <div class="card shadow-sm h-100" style="border-radius: 12px; overflow: hidden;">
 
-              <!-- Tombol trigger modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#beritaModal{{ $berita->id }}">
+            <!-- Gambar -->
+            <img src="{{ asset('storage/' . $berita->foto) }}" 
+                 class="card-img-top" 
+                 alt="{{ $berita->judul }}" 
+                 style="height: 200px; object-fit: cover;">
+
+            <!-- Body -->
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title fw-bold">{{ $berita->judul }}</h5>
+              <p class="card-text text-muted" style="flex-grow: 1;">
+                {{ Str::limit($berita->deskripsi, 100) }}
+              </p>
+
+              <!-- Tombol -->
+              <button type="button" 
+                      class="btn btn-primary w-100 mt-auto" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#beritaModal{{ $berita->id }}">
                 Lihat Selengkapnya
               </button>
             </div>
@@ -75,13 +90,14 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="beritaModalLabel{{ $berita->id }}">{{ $berita->judul }}</h5>
+                <h5 class="modal-title fw-bold" id="beritaModalLabel{{ $berita->id }}">{{ $berita->judul }}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <img src="{{ asset('storage/' . $berita->foto) }}" class="img-fluid mb-3" alt="{{ $berita->judul }}">
+                <img src="{{ asset('storage/' . $berita->foto) }}" 
+                     class="img-fluid rounded mb-3" 
+                     alt="{{ $berita->judul }}">
                 <p>{{ $berita->deskripsi }}</p>
-              </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
               </div>
@@ -92,6 +108,8 @@
     </div>
   </div>
 </section>
+
+
 
  
     <!-- isi sama berita, beritanya terserah -->

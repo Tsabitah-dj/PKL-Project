@@ -1,0 +1,277 @@
+/* ========================= */
+/* Avatar User */
+/* ========================= */
+.user-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #ffd700;   /* kuning emas */
+    color: #072475;        /* biru tua */
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    border: 1px solid #ccc;
+}
+
+/* =========================================================
+   🔹 NAVBAR STYLING
+   ========================================================= */
+.custom-navbar {
+    background-color: #647FBC; /* biru gelap */
+    padding: 10px 20px;
+}
+
+.custom-navbar .navbar-brand .logo-img {
+    width: 55px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.custom-navbar .navbar-nav {
+    margin-left: auto; /* dorong menu ke kanan */
+}
+
+.brand-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.brand-subtitle {
+    font-size: 11px;
+    color: #e9e7e5;
+    line-height: 1.2;
+}
+
+/* 🔹 Menu nav */
+.custom-nav .nav-link {
+    font-size: 12px;
+    font-weight: 500;
+    color: #f1f1f1 !important;
+    margin-left: 15px;
+    padding: 6px 10px;
+    transition: color 0.3s ease;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active {
+    color: #ffd700 !important; /* kuning emas */
+}
+
+/* 🔹 Dropdown menu */
+.navbar .dropdown-menu {
+    background-color: #072475; /* biru tua */
+    border: none;
+    border-radius: 6px;
+    padding: 8px 0;
+    min-width: 200px;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    font-size: 12px;
+    color: #fff;
+    padding: 6px 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #0a2f80;
+    color: #ffd700;
+}
+
+/* =========================================================
+   🔹 HERO SECTION
+   ========================================================= */
+.hero-section {
+    margin-top: 20px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* hitam transparan */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* 🔹 Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* === TOPBAR STYLE === */
+.topbar {
+    background: #f8f9fa; /* abu-abu terang */
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.topbar .topbar-info {
+    color: #333;
+}
+
+.topbar .topbar-info i {
+    margin-right: 5px;
+    color: #647FBC; /* biru biar senada */
+}
+
+.topbar .topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Sosmed */
+.topbar-social a {
+    color: #333;
+    margin-left: 12px;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.topbar-social a:hover {
+    color: #647FBC; /* biru saat hover */
+}
+
+/* Tombol Login/Logout */
+.topbar-auth .btn-auth {
+    background: #647FBC;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.topbar-auth .btn-auth:hover {
+    background: #4a63a3; 
+}
+
+
+.topbar-auth {
+    margin-left: 20px;  
+}
+
+/* === Kata Sambutan Section === */
+.sambutan-section {
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.sambutan-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.sambutan-section h2 {
+    color: #072475;
+}
+
+.sambutan-section p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* ====== Alamat Section ====== */
+.alamat-section {
+    background-color: #f9f9f9;
+}
+
+.alamat-card {
+    border: 1px solid #198754; /* hijau bootstrap */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.alamat-card .card-header {
+    background-color: #198754;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+}
+
+.alamat-card .card-body {
+    color: #333;
+    padding: 20px;
+}
+
+.alamat-card .card-footer {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #198754;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ====== Spasi Antar Section ====== */
+section {
+    margin-top: 60px;   /* jarak atas antar section */
+    margin-bottom: 60px; /* jarak bawah antar section */
+}
+
+/* Biar tidak terlalu dempet sama footer */
+footer {
+    margin-top: 80px;
+}

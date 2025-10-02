@@ -29,6 +29,9 @@ class BeritasTable
                     ->limit(225) 
                     ->toggleable(),
 
+                TextColumn::make('likes')  
+                ->sortable(),
+
                 TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

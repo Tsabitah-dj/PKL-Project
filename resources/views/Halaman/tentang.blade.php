@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+
     <!--====== Required meta tags ======-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Tentang</title>
+    <title>Kecamatan Tarogong Kaler</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="{{ asset('assets/images/Garut.jpg') }}" type="image/png">
@@ -35,20 +35,17 @@
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    <style>
-        /* 🔹 Tambahin smooth scroll biar halus */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <!--====== Custom css ======-->
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
+
 </head>
 
 <body>
 
     <!--====== HEADER PART START ======-->
-    @include('Layout/Navbar')
+      @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
-
     <!--====== Tentang/About ======-->
     <section class="py-5 mt-5">
 

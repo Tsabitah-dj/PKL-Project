@@ -12,5 +12,12 @@ class Berita extends Model
         'foto',
         'judul',
         'deskripsi',
+        'likes',
     ];
+
+    public function komentar()
+{
+    return $this->hasMany(Komentar::class);
+}
+
 }

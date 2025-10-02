@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Bidang;
+use App\Models\Berita;
 
 class AppController extends Controller
 {
     //
     public function index()
     {
-       $bidangs = Bidang::all();
+       $beritas = Berita::latest()->take(9)->get();
 
         // kirim ke view Beranda
-        return view('Beranda', compact('bidangs'));
+        return view('Beranda', compact('beritas'));
     }
 }

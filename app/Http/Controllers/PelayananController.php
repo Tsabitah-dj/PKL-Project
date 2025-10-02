@@ -13,3 +13,4 @@ class PelayananController extends Controller
         return view('Halaman.Pelayanan', compact('pelayanans'));
     }
 }
+  
