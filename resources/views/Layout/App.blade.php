@@ -90,7 +90,7 @@
                     accumsan sapien, et porttitor urna augue a nibh. 
                     Integer in urna eget purus sodales accumsan.
                 </p>
-                <p class="fw-bold mb-0">Nama camat</p>
+                <p class="fw-bold mb-0">Rakhmat Alamsyah S.Sos</p>
             </div>
         </div>
     </div>

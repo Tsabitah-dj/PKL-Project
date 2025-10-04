@@ -68,7 +68,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#">Profil</a>
                             <ul class="sub-menu">
-                                <li><a href="#">Visi & Misi</a></li>
+                                <li><a href="{{route('Halaman.Visimisi')}}">Visi & Misi</a></li>
                                 <li><a href="#">Struktur Organisasi</a></li>
                                 <li><a href="#">Monografi</a></li>
                             </ul>

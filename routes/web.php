@@ -10,6 +10,8 @@ use App\Http\Controllers\PelayananController;
 use App\Http\Controllers\AlamatController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\KomentarController;
+use App\Http\Controllers\visimisicontroller;
+
 
 
 Route::get('/', function () {
@@ -24,6 +26,7 @@ Route::get('/tentang', [tentangController::class, 'index'])->name('Halaman.tenta
 Route::get('/pelayanan', [PelayananController::class, 'index'])->name('Halaman.Pelayanan');
 Route::get('/Alamat', [AlamatController::class, 'index'])->name('Halaman.Alamat');
 Route::post('/berita/{id}/komentar', [KomentarController::class, 'store'])->name('komentar.store');
+Route::get('/Visimisi', [visimisicontroller::class, 'index'])->name('Halaman.Visimisi');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
