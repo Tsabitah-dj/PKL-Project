@@ -22,21 +22,21 @@
 .custom-navbar {
     background-color: #647FBC; /* biru gelap */
     padding: 10px 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* bayangan halus */
+    z-index: 1030; /* biar selalu di atas */
 }
 
+/* 🔹 Logo */
 .custom-navbar .navbar-brand .logo-img {
-    width: 55px;
+    width: 50px;
     height: auto;
     margin-right: 10px;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
-.custom-navbar .navbar-nav {
-    margin-left: auto; /* dorong menu ke kanan */
-}
-
+/* 🔹 Brand title & subtitle */
 .brand-title {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: #fff;
     line-height: 1.2;
@@ -44,18 +44,22 @@
 
 .brand-subtitle {
     font-size: 11px;
-    color: #e9e7e5;
+    color: #dcdcdc;
     line-height: 1.2;
 }
 
-/* 🔹 Menu nav */
+/* 🔹 Nav menu */
+.custom-navbar .navbar-nav {
+    margin-left: auto; /* dorong menu ke kanan */
+}
+
 .custom-nav .nav-link {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
     color: #f1f1f1 !important;
-    margin-left: 15px;
+    margin-left: 18px;
     padding: 6px 10px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .custom-nav .nav-link:hover,
@@ -82,6 +86,20 @@
 .navbar .dropdown-menu .dropdown-item:hover {
     background-color: #0a2f80;
     color: #ffd700;
+}
+
+/* 🔹 Fixed-top support: kasih padding ke body */
+body {
+    padding-top: 70px; /* biar konten ga ketiban navbar */
+}
+
+/* 🔹 Efek blur/transparan ketika navbar discroll */
+.navbar-scrolled {
+    background-color: rgba(100, 127, 188, 0.85); /* warna biru dengan transparansi */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 /* =========================================================
@@ -145,19 +163,26 @@
 
 /* === TOPBAR STYLE === */
 .topbar {
-    background: #f8f9fa; /* abu-abu terang */
+    background: #f8f9fa;              /* abu-abu terang */
     border-bottom: 1px solid #e1e1e1;
-    font-size: 14px;
-    padding: 5px 15px;
+    font-size: 13px;
+    padding: 6px 20px;               /* lebih slim dan seimbang */
+    position: relative;
+    z-index: 1031;                   /* lebih tinggi dari navbar */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 .topbar .topbar-info {
     color: #333;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;                 /* biar responsive */
 }
 
 .topbar .topbar-info i {
-    margin-right: 5px;
-    color: #647FBC; /* biru biar senada */
+    margin-right: 6px;
+    color: #647FBC;                   /* biru senada */
+    font-size: 14px;
 }
 
 .topbar .topbar-right {
@@ -165,37 +190,38 @@
     align-items: center;
 }
 
-/* Sosmed */
+/* 🔹 Sosmed */
 .topbar-social a {
-    color: #333;
-    margin-left: 12px;
+    color: #555;
+    margin-left: 14px;
     font-size: 15px;
     transition: color 0.3s;
 }
 
 .topbar-social a:hover {
-    color: #647FBC; /* biru saat hover */
+    color: #647FBC;                   /* biru saat hover */
 }
 
-/* Tombol Login/Logout */
+/* 🔹 Tombol Login/Logout */
 .topbar-auth .btn-auth {
     background: #647FBC;
     color: #fff;
-    padding: 4px 12px;
+    padding: 4px 14px;
     border-radius: 4px;
     font-size: 13px;
     text-decoration: none;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .topbar-auth .btn-auth:hover {
-    background: #4a63a3; 
+    background: #4a63a3;              /* biru lebih gelap saat hover */
 }
-
 
 .topbar-auth {
-    margin-left: 20px;  
+    margin-left: 18px;                /* jarak dengan sosmed */
 }
+
 
 /* === Kata Sambutan Section === */
 .sambutan-section {

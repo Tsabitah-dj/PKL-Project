@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\Komentars\Pages;
+namespace App\Filament\Resources\Pegawais\Pages;
 
-use App\Filament\Resources\Komentars\KomentarResource;
+use App\Filament\Resources\Pegawais\PegawaiResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditKomentar extends EditRecord
+class EditPegawai extends EditRecord
 {
-    protected static string $resource = KomentarResource::class;
+    protected static string $resource = PegawaiResource::class;
 
     protected function getHeaderActions(): array
     {

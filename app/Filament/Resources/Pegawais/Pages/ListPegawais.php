@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\Komentars\Pages;
+namespace App\Filament\Resources\Pegawais\Pages;
 
-use App\Filament\Resources\Komentars\KomentarResource;
+use App\Filament\Resources\Pegawais\PegawaiResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
 
-class ListKomentars extends ListRecords
+class ListPegawais extends ListRecords
 {
-    protected static string $resource = KomentarResource::class;
+    protected static string $resource = PegawaiResource::class;
 
     protected function getHeaderActions(): array
     {

@@ -11,6 +11,8 @@ use App\Http\Controllers\AlamatController;
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\visimisicontroller;
+use App\Http\Controllers\StrukturController;
+use App\Http\Controllers\MonografiController;
 
 
 
@@ -26,7 +28,9 @@ Route::get('/tentang', [tentangController::class, 'index'])->name('Halaman.tenta
 Route::get('/pelayanan', [PelayananController::class, 'index'])->name('Halaman.Pelayanan');
 Route::get('/Alamat', [AlamatController::class, 'index'])->name('Halaman.Alamat');
 Route::post('/berita/{id}/komentar', [KomentarController::class, 'store'])->name('komentar.store');
-Route::get('/Visimisi', [visimisicontroller::class, 'index'])->name('Halaman.Visimisi');
+Route::get('/Profil/Visimisi', [visimisicontroller::class, 'index'])->name('Profil.Visimisi');
+Route::get('/Profil/Struktur', [StrukturController::class, 'index'])->name('Profil.Struktur');
+Route::get('/Profil/Monografi', [MonografiController::class, 'index'])->name('Profil.Monografi');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');

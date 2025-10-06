@@ -9,6 +9,6 @@ class visimisicontroller extends Controller
     //
      public function index()
     {
-       return view ('Halaman.Visimisi');
+       return view ('Profil.Visimisi');
     }
 }

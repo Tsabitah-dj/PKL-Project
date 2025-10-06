@@ -1,4 +1,4 @@
-<header class="header-area">
+<header class="header-area fixed-top">
     <div class="header-nav">
         <div class="navigation">
             <!-- Topbar Start -->
@@ -17,8 +17,8 @@
         <div class="topbar-right d-flex align-items-center">
             <!-- Sosial Media -->
             <div class="topbar-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/1D4ihZfAaj/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tarogongkaler?igsh=cGttNjV1Ym5xdG1w"><i class="fab fa-instagram"></i></a>
                 <a href="mailto:kecamatan@garut.go.id"><i class="fa fa-envelope"></i></a>
             </div>
 
@@ -40,7 +40,7 @@
     </div>
 </div>
 <!-- Topbar End -->
-            <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+           <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
                 <a class="navbar-brand d-flex align-items-center" href="{{ route('Beranda') }}">
                     <img src="{{ asset('assets/images/Garut.jpg') }}" alt="Logo" class="logo-img">
                     <div>
@@ -68,9 +68,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#">Profil</a>
                             <ul class="sub-menu">
-                                <li><a href="{{route('Halaman.Visimisi')}}">Visi & Misi</a></li>
-                                <li><a href="#">Struktur Organisasi</a></li>
-                                <li><a href="#">Monografi</a></li>
+                                <li><a href="{{route('Profil.Visimisi')}}">Visi & Misi</a></li>
+                                <li><a href="{{route('Profil.Struktur')}}">Struktur/Kepegawaian</a></li>
+                                <li><a href="{{route('Profil.Monografi')}}">Monografi Kecamatan</a></li>
                             </ul>
                         </li>
 
@@ -86,7 +86,7 @@
                                 <li><a class="dropdown-item" href="#">Desa Langensari</a></li>
                                 <li><a class="dropdown-item" href="#">Desa Mekarjaya</a></li>
                                 <li><a class="dropdown-item" href="#">Desa Mekarwangi</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Pananjung</a></li>
+                                <li><a class="dropdown-item" href="#">Kel. Pananjung</a></li>
                                 <li><a class="dropdown-item" href="#">Desa Panjiwangi</a></li>
                                 <li><a class="dropdown-item" href="#">Desa Pasawahan</a></li>
                                 <li><a class="dropdown-item" href="#">Desa Sinarjaya</a></li>
@@ -96,8 +96,7 @@
                                 <li><a class="dropdown-item" href="#">Desa Rancamekar</a></li>
                             </ul>
                         </li>
-
-                        <li class="nav-item"><a class="nav-link" href="{{ route('Halaman.Pelayanan') }}">Kelurahan</a></li>
+ 
                         <li class="nav-item"><a class="nav-link" href="{{ route('Halaman.Pelayanan') }}">Pelayanan</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Halaman.Berita') }}">Berita</a></li>
                     </ul>
