@@ -99,7 +99,6 @@
 <section class="berita-terbaru py-5">
     <div class="container">
         <h2 class="text-center mb-4">Berita Terbaru</h2>
-
         <div id="beritaCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
 
@@ -122,7 +121,7 @@
                             </div>
                         </div>
 
-                        <!-- Modal Detail Berita -->
+                        <!-- Modal Berita -->
                         <div class="modal fade" id="beritaModal{{ $berita->id }}" tabindex="-1" aria-labelledby="beritaModalLabel{{ $berita->id }}" aria-hidden="true">
                             <div class="modal-dialog modal-lg modal-dialog-centered">
                                 <div class="modal-content">
@@ -140,7 +139,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- End Modal -->
+                        <!-- Modal Berita -->
 
                         @endforeach
                     </div>

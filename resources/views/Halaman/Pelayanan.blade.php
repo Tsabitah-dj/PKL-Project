@@ -56,47 +56,72 @@
     <!--====== HEADER PART ENDS ======-->
     
     <!-- Diisi sama Pelayanan yang Yang Ada Dari panel admin -->
-       <section style="margin-top: 200px;">
+      <section style="margin-top:200px;">
   <div class="container">
-    <div class="row">
-      @foreach($pelayanans as $pelayanan)
-      <div class="col-md-4 mb-4">
-        <div class="card" style="width: 18rem;">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow border-0">
           <div class="card-body">
-            <h5 class="card-title">{{ $pelayanan->nama_pelayanan }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Deskripsi</h6>
+            <h4 class="mb-3 fw-bold text-center">LAYANAN</h4>
+            <p class="text-muted text-center"> Daftar Pelayanan yang ada Di Kecamatan Tarkal </p>
 
-            {{-- tampilkan hanya 100 karakter --}}
-            <p class="card-text">
-              {{ Str::limit($pelayanan->deskripsi, 100) }}
-            </p>
-
-            {{-- tombol lihat selengkapnya --}}
-            <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#deskripsiModal{{ $pelayanan->id }}">
-              Lihat Syarat-Syarat
-            </a>
-          </div>
-        </div>
-      </div>
-
-      {{-- Modal --}}
-      <div class="modal fade" id="deskripsiModal{{ $pelayanan->id }}" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">{{ $pelayanan->nama_pelayanan }}</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            {{-- Pilih pelayanan --}}
+            <div class="mb-3">
+              <label for="pelayananSelect" class="form-label">Pilih Pelayanan</label>
+              <select id="pelayananSelect" class="form-select">
+                <option value="">-- Pilih Pelayanan --</option>
+                @foreach($pelayanans as $pelayanan)
+                  <option value="{{ $pelayanan->id }}" 
+                          data-deskripsi="{{ htmlentities($pelayanan->deskripsi) }}">
+                    {{ $pelayanan->nama_pelayanan }}
+                  </option>
+                @endforeach
+              </select>
             </div>
-            <div class="modal-body">
-              {!! nl2br(e($pelayanan->deskripsi)) !!}
+
+            {{-- Hasil syarat --}}
+            <div id="syaratContainer" class="mt-4" style="display:none;">
+              <h5 class="fw-bold">Syarat-Syarat:</h5>
+              <ul class="list-group" id="syaratList"></ul>
             </div>
           </div>
         </div>
       </div>
-      @endforeach
     </div>
   </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const select = document.getElementById("pelayananSelect");
+  const syaratContainer = document.getElementById("syaratContainer");
+  const syaratList = document.getElementById("syaratList");
+
+  select.addEventListener("change", function() {
+    const selectedOption = select.options[select.selectedIndex];
+    const deskripsi = selectedOption.getAttribute("data-deskripsi");
+
+    if (deskripsi) {
+      syaratList.innerHTML = "";
+
+      // pisahkan per baris
+      deskripsi.split("\n").forEach(syarat => {
+        if (syarat.trim() !== "") {
+          const li = document.createElement("li");
+          li.classList.add("list-group-item");
+          li.textContent = syarat.trim();
+          syaratList.appendChild(li);
+        }
+      });
+
+      syaratContainer.style.display = "block";
+    } else {
+      syaratContainer.style.display = "none";
+    }
+  });
+});
+</script>
+
 
     <!-- Diisi sama Pelayanan Yang Ada dari panel admin -->
 

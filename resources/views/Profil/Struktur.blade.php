@@ -68,22 +68,35 @@
     <p>Data Pegawai</p>
 
     <div class="container">
-        <table class="table table-striped table-hover">
-            <thead class="table-dark">
-                <tr>
-                    <th scope="col">Foto</th>
-                    <th scope="col">Keterangan</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($pegawais as $pegawai)
-                <tr>
-                    <td><img src="{{ asset('storage/' . $pegawai->foto) }}" alt="Foto Pegawai" class="img-thumbnail" style="width: 100px; height: 100px;"></td>
-                    <td>{!! $pegawai->keterangan !!}</td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+        <table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Foto</th>
+            <th scope="col">Keterangan</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($pegawais as $pegawai)
+        <tr>
+           <td>
+    <img src="{{ asset('storage/' . $pegawai->foto) }}"
+         alt="Foto Pegawai"
+         class="img-thumbnail pegawai-foto">
+</td>
 
-</section>
+            <td>
+                <ul class="mb-0">
+                    @foreach(explode("\n", $pegawai->keterangan) as $item)
+                        @if(trim($item) != '')
+                            <li>{{ $item }}</li>
+                        @endif
+                    @endforeach
+                </ul>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>
+</div>
+</section
+

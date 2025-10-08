@@ -59,47 +59,56 @@
 
                 <!-- Menu geser ke kanan -->
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto custom-nav">
-                        <li class="nav-item">
-                            <a class="nav-link {{ request()->routeIs('Beranda') ? 'active' : '' }}"
-                                href="{{ route('Beranda') }}">Beranda</a>
-                        </li>
+                  <ul class="navbar-nav ms-auto custom-nav">
+    <li class="nav-item">
+        <a class="nav-link {{ request()->routeIs('Beranda') ? 'active' : '' }}"
+           href="{{ route('Beranda') }}">Beranda</a>
+    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Profil</a>
-                            <ul class="sub-menu">
-                                <li><a href="{{route('Profil.Visimisi')}}">Visi & Misi</a></li>
-                                <li><a href="{{route('Profil.Struktur')}}">Struktur/Kepegawaian</a></li>
-                                <li><a href="{{route('Profil.Monografi')}}">Monografi Kecamatan</a></li>
-                            </ul>
-                        </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link" href="#">Profil</a>
+        <ul class="sub-menu">
+            <li><a href="{{route('Profil.Visimisi')}}">Visi & Misi</a></li>
+            <li><a href="{{route('Profil.Struktur')}}">Struktur/Kepegawaian</a></li>
+            <li><a href="{{route('Profil.Monografi')}}">Monografi Kecamatan</a></li>
+        </ul>
+    </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle {{ request()->routeIs('Halaman.Pelayanan') ? 'active' : '' }}"
-                               href="#" id="desaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Desa
-                            </a>
-                            <ul class="sub-menu" aria-labelledby="desaDropdown">
-                                <li><a class="dropdown-item" href="#">Desa Jati</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Rancabango</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Cimanganten</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Langensari</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Mekarjaya</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Mekarwangi</a></li>
-                                <li><a class="dropdown-item" href="#">Kel. Pananjung</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Panjiwangi</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Pasawahan</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Sinarjaya</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Sukajadi</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Sukawangi</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Tanjung Kamuning</a></li>
-                                <li><a class="dropdown-item" href="#">Desa Rancamekar</a></li>
-                            </ul>
-                        </li>
- 
-                        <li class="nav-item"><a class="nav-link" href="{{ route('Halaman.Pelayanan') }}">Pelayanan</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('Halaman.Berita') }}">Berita</a></li>
-                    </ul>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle {{ request()->routeIs('Halaman.Desa*') ? 'active' : '' }}"
+           href="#" id="desaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Desa
+        </a>
+        <ul class="sub-menu" aria-labelledby="desaDropdown">
+            <li><a class="dropdown-item" href="#">Desa Jati</a></li>
+            <li><a class="dropdown-item" href="#">Desa Rancabango</a></li>
+            <li><a class="dropdown-item" href="#">Desa Cimanganten</a></li>
+            <li><a class="dropdown-item" href="#">Desa Langensari</a></li>
+            <li><a class="dropdown-item" href="#">Desa Mekarjaya</a></li>
+            <li><a class="dropdown-item" href="#">Desa Mekarwangi</a></li>
+            <li><a class="dropdown-item" href="#">Kel. Pananjung</a></li>
+            <li><a class="dropdown-item" href="#">Desa Panjiwangi</a></li>
+            <li><a class="dropdown-item" href="#">Desa Pasawahan</a></li>
+            <li><a class="dropdown-item" href="#">Desa Sinarjaya</a></li>
+            <li><a class="dropdown-item" href="#">Desa Sukajadi</a></li>
+            <li><a class="dropdown-item" href="#">Desa Sukawangi</a></li>
+            <li><a class="dropdown-item" href="#">Desa Tanjung Kamuning</a></li>
+            <li><a class="dropdown-item" href="#">Desa Rancamekar</a></li>
+        </ul>
+    </li>
+
+    {{-- ✅ Perbaikan di sini: hilangkan dropdown-toggle --}}
+    <li class="nav-item">
+        <a class="nav-link {{ request()->routeIs('Halaman.Pelayanan') ? 'active' : '' }}"
+           href="{{ route('Halaman.Pelayanan') }}">Pelayanan</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link {{ request()->routeIs('Halaman.Berita') ? 'active' : '' }}"
+           href="{{ route('Halaman.Berita') }}">Berita</a>
+    </li>
+</ul>
+
                 </div>
             </nav>
         </div>

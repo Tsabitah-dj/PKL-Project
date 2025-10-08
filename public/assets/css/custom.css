@@ -302,3 +302,22 @@ footer {
     margin-top: 80px;
 }
 
+.pegawai-foto {
+    width: 150px;   /* bisa diganti 180px kalau mau lebih besar */
+    height: auto;   /* biar proporsi gambar tetap terjaga */
+    object-fit: cover; /* biar foto nggak melar */
+    border-radius: 6px; /* kasih sudut sedikit rounded */
+}
+
+/* === Styling Tabel Kepegawaian === */
+.table-bordered th,
+.table-bordered td {
+    border: 2px solid #fc1d1d !important; /* garis lebih tebal */
+    vertical-align: top; /* rapikan posisi isi */
+}
+
+.table thead th {
+    background-color: #54e01d; /* biar header senada navbar */
+    color: #fff;
+    text-align: center;
+}

@@ -49,3 +49,10 @@
     <!--====== HEADER PART START ======-->
       @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
+
+
+ <section class="py-5 text-center" style="margin-top: 5rem;">
+    <h3 class="display-5 mb-4" style="margin-top: 4rem; color: black;">MONOGRAFI</h3>
+    <p>Monografi Kecamatan Tarogong Kaler </p>
+</section>
+    
