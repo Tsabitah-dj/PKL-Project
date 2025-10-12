@@ -51,7 +51,7 @@
     <!--====== HEADER PART ENDS ======-->
 
 <section class="py-5 text-center" style="margin-top: 5rem;">
-    <h3 class="display-5 mb-4" style="margin-top: 4rem; color: black;">VISI DAN MISI</h3>
+    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">VISI DAN MISI</h2>
     <p>
         Visi Kecamatan Tarogong Kaler, Garut adalah "Terwujudnya Kecamatan Tarogong Kaler yang unggul,
             berdaya saing, dan sejahtera" dengan visi misi mendukungnya seperti meningkatkan kualitas SDM,

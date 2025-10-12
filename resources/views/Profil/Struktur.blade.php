@@ -51,7 +51,7 @@
     <!--====== HEADER PART ENDS ======-->
 
 <section class="py-5 text-center" style="margin-top: 5rem;">
-    <h3 class="display-5 mb-4" style="margin-top: 4rem; color: black;">STRUKTUR ORGANISASI</h3>
+    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">STRUKTUR ORGANISASI</h3>
     <p>Struktur Pegawai Kantor Kecamatan Tarogong Kaler </p>
 </section>
 
@@ -64,7 +64,7 @@
 </section>
 
 <section class="py-5 text-center" style="margin-top: 5rem;">
-    <h3 class="display-5 mb-4" style="margin-top: 4rem; color: black;">KEPEGAWAIAN</h3>
+    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">KEPEGAWAIAN</h2>
     <p>Data Pegawai</p>
 
     <div class="container">

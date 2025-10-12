@@ -20,7 +20,9 @@
    🔹 NAVBAR STYLING
    ========================================================= */
 .custom-navbar {
-    background-color: #647FBC; /* biru gelap */
+    background-color: rgba(100, 127, 188, 0.8); /* biru gelap transparan */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     padding: 10px 20px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* bayangan halus */
     z-index: 1030; /* biar selalu di atas */
@@ -90,7 +92,7 @@
 
 /* 🔹 Fixed-top support: kasih padding ke body */
 body {
-    padding-top: 70px; /* biar konten ga ketiban navbar */
+    padding-top: 0px; /* biar navbar bisa menutupi hero section */
 }
 
 /* 🔹 Efek blur/transparan ketika navbar discroll */
@@ -106,7 +108,7 @@ body {
    🔹 HERO SECTION
    ========================================================= */
 .hero-section {
-    margin-top: 20px;
+    margin-top: 0px;
     position: relative;
     color: white;
     text-align: center;
@@ -163,8 +165,10 @@ body {
 
 /* === TOPBAR STYLE === */
 .topbar {
-    background: #f8f9fa;              /* abu-abu terang */
-    border-bottom: 1px solid #e1e1e1;
+    background: rgba(248, 249, 250, 0.8); /* abu-abu terang transparan */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.5);
     font-size: 13px;
     padding: 6px 20px;               /* lebih slim dan seimbang */
     position: relative;
@@ -303,21 +307,44 @@ footer {
 }
 
 .pegawai-foto {
-    width: 150px;   /* bisa diganti 180px kalau mau lebih besar */
-    height: auto;   /* biar proporsi gambar tetap terjaga */
-    object-fit: cover; /* biar foto nggak melar */
-    border-radius: 6px; /* kasih sudut sedikit rounded */
+    width: 150px;   
+    height: auto;   
+    object-fit: cover; 
+    border-radius: 6px; 
 }
 
 /* === Styling Tabel Kepegawaian === */
 .table-bordered th,
 .table-bordered td {
-    border: 2px solid #fc1d1d !important; /* garis lebih tebal */
-    vertical-align: top; /* rapikan posisi isi */
+    border: 2px solid hsl(0, 97%, 55%) !important;
+    vertical-align: top; 
 }
 
 .table thead th {
-    background-color: #54e01d; /* biar header senada navbar */
+    background-color: #54e01d; 
     color: #fff;
     text-align: center;
 }
+
+/* Efek rotasi ikon panah */
+    .rotate-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .accordion-button.collapsed .rotate-icon {
+        transform: rotate(0deg);
+    }
+
+    .accordion-button:not(.collapsed) .rotate-icon {
+        transform: rotate(180deg);
+    }
+
+    /* Efek fade in konten */
+    .fade-in {
+        animation: fadeIn 0.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }

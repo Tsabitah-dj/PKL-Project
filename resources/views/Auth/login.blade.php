@@ -17,6 +17,9 @@
          class="mx-auto mb-3 d-block"
          style="width: 100px; height: auto; object-fit: cover;">
     <h3 class="text-center mb-4">Login</h3>
+    <p class="text-center mt-3">
+      Belum punya akun? <a href="{{ route('register') }}">Register</a>
+    </p>
 
     @if ($errors->any())
       <div class="alert alert-danger">

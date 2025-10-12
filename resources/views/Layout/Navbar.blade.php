@@ -6,11 +6,8 @@
     <div class="container d-flex justify-content-between align-items-center">
         <!-- Info Kiri -->
         <div class="topbar-info">
-            <i class="fa fa-map-marker-alt"></i> Jl. Raya Tarogong Kaler No. 123
+            <i class="fa fa-map-marker-alt"></i> Jl. Suherman No.22, Tarogong, Kec. Tarogong Kaler, Kabupaten Garut, Jawa Barat 44151
             <span class="mx-3">|</span>
-            <i class="fa fa-phone"></i> (0262) 123456
-            <span class="mx-3">|</span>
-            <i class="fa fa-envelope"></i> kecamatan@garut.go.id
         </div>
 
         <!-- Kanan: Sosmed + Auth -->
@@ -80,20 +77,20 @@
            Desa
         </a>
         <ul class="sub-menu" aria-labelledby="desaDropdown">
-            <li><a class="dropdown-item" href="#">Desa Jati</a></li>
-            <li><a class="dropdown-item" href="#">Desa Rancabango</a></li>
-            <li><a class="dropdown-item" href="#">Desa Cimanganten</a></li>
-            <li><a class="dropdown-item" href="#">Desa Langensari</a></li>
-            <li><a class="dropdown-item" href="#">Desa Mekarjaya</a></li>
-            <li><a class="dropdown-item" href="#">Desa Mekarwangi</a></li>
-            <li><a class="dropdown-item" href="#">Kel. Pananjung</a></li>
-            <li><a class="dropdown-item" href="#">Desa Panjiwangi</a></li>
-            <li><a class="dropdown-item" href="#">Desa Pasawahan</a></li>
-            <li><a class="dropdown-item" href="#">Desa Sinarjaya</a></li>
-            <li><a class="dropdown-item" href="#">Desa Sukajadi</a></li>
-            <li><a class="dropdown-item" href="#">Desa Sukawangi</a></li>
-            <li><a class="dropdown-item" href="#">Desa Tanjung Kamuning</a></li>
-            <li><a class="dropdown-item" href="#">Desa Rancamekar</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Jati') }}">Desa Jati</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Rancabango') }}">Desa Rancabango</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Cimanganten') }}">Desa Cimanganten</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Langensari') }}">Desa Langensari</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Mekarjaya') }}">Desa Mekarjaya</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Mekarwangi') }}">Desa Mekarwangi</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'KelPananjung') }}">Kel. Pananjung</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Panjiwangi') }}">Desa Panjiwangi</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Pasawahan') }}">Desa Pasawahan</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Sinarjaya') }}">Desa Sinarjaya</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Sukajadi') }}">Desa Sukajadi</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Sukawangi') }}">Desa Sukawangi</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'TanjungKamuning') }}">Desa Tanjung Kamuning</a></li>
+            <li><a class="dropdown-item" href="{{ route('desa.show', 'Rancamekar')}}">Desa Rancamekar</a></li>
         </ul>
     </li>
 

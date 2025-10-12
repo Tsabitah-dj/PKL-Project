@@ -13,7 +13,7 @@ use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\visimisicontroller;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\MonografiController;
-u
+use App\Http\Controllers\DesaController;  
 
 
 Route::get('/', function () {
@@ -31,8 +31,7 @@ Route::post('/berita/{id}/komentar', [KomentarController::class, 'store'])->name
 Route::get('/Profil/Visimisi', [visimisicontroller::class, 'index'])->name('Profil.Visimisi');
 Route::get('/Profil/Struktur', [StrukturController::class, 'index'])->name('Profil.Struktur');
 Route::get('/Profil/Monografi', [MonografiController::class, 'index'])->name('Profil.Monografi');
-
-Route::get('/desa/{slug}', [DesaController::class, 'show'])->name('Halaman.Desa');
+Route::get('/desa/{nama}', [App\Http\Controllers\DesaController::class, 'show'])->name('desa.show');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
