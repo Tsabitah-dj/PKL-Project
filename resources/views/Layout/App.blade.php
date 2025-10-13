@@ -101,61 +101,69 @@
         <h2 class="text-center mb-4">Berita Terbaru</h2>
         <div id="beritaCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
-
                 @foreach($beritas->chunk(3) as $index => $chunk)
                 <div class="carousel-item {{ $index == 0 ? 'active' : '' }}">
                     <div class="row">
                         @foreach($chunk as $berita)
-                        <div class="col-md-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="{{ asset('storage/' . $berita->foto) }}" class="card-img-top" alt="Berita">
-                                <div class="card-body">
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm" style="height: 300px;">
+                                <img src="{{ asset('storage/' . $berita->foto) }}" class="card-img-top" alt="Berita" style="height: 150px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">{{ $berita->judul }}</h5>
-                                    <p class="card-text text-truncate">{{ Str::limit($berita->isi, 100) }}</p>
-                                    <button class="btn btn-primary btn-sm" 
-                                        data-bs-toggle="modal" 
-                                        data-bs-target="#beritaModal{{ $berita->id }}">
+                                    <small class="text-muted">{{ $berita->created_at->format('d M Y') }}</small>
+                                    <p class="card-text text-truncate flex-grow-1">{{ Str::limit($berita->deskripsi, 100) }}</p>
+                                    <button class="btn btn-primary btn-sm mt-auto"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#beritaModal{{ $berita->id }}">
                                         Lihat Selengkapnya
                                     </button>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Modal Berita -->
-                        <div class="modal fade" id="beritaModal{{ $berita->id }}" tabindex="-1" aria-labelledby="beritaModalLabel{{ $berita->id }}" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="beritaModalLabel{{ $berita->id }}">{{ $berita->judul }}</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="{{ asset('storage/' . $berita->foto) }}" class="img-fluid mb-3" alt="Berita">
-                                        <p>{{ $berita->isi }}</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal Berita -->
-
                         @endforeach
                     </div>
                 </div>
                 @endforeach
+            </div>
 
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                @foreach($beritas->chunk(3) as $index => $chunk)
+                <button type="button" data-bs-target="#beritaCardCarousel" data-bs-slide-to="{{ $index }}" class="{{ $index == 0 ? 'active' : '' }}" aria-current="{{ $index == 0 ? 'true' : 'false' }}" aria-label="Slide {{ $index + 1 }}"></button>
+                @endforeach
             </div>
 
             <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#beritaCardCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#beritaCardCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <!-- Modals outside the carousel -->
+        @foreach($beritas as $berita)
+        <div class="modal fade" id="beritaModal{{ $berita->id }}" tabindex="-1" aria-labelledby="beritaModalLabel{{ $berita->id }}" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="beritaModalLabel{{ $berita->id }}">{{ $berita->judul }}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{ asset('storage/' . $berita->foto) }}" class="img-fluid mb-3" alt="Berita">
+                        <p>{{ $berita->deskripsi }}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endforeach
     </div>
 </section>
 

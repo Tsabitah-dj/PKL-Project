@@ -348,3 +348,42 @@ footer {
         from { opacity: 0; transform: translateY(-10px); }
         to { opacity: 1; transform: translateY(0); }
     }
+
+    /* Set equal height for accordion bodies */
+    .accordion-body {
+        height: 300px; /* Adjust height as needed based on content */
+        overflow-y: auto;
+    }
+
+    .card-title {
+  font-size: 1.1rem;
+  color: #222 !important;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+  background-color: #647FBC;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #5068a8;
+}
+
+/* Background body hijau, sections putih */
+body {
+    background-color: #4CAF50; /* Hijau */
+}
+
+section {
+    background-color: white !important;
+}

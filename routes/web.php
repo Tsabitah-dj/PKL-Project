@@ -14,6 +14,7 @@ use App\Http\Controllers\visimisicontroller;
 use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\MonografiController;
 use App\Http\Controllers\DesaController;  
+use App\Http\Controllers\bidangController;  
 
 
 Route::get('/', function () {
@@ -31,6 +32,7 @@ Route::post('/berita/{id}/komentar', [KomentarController::class, 'store'])->name
 Route::get('/Profil/Visimisi', [visimisicontroller::class, 'index'])->name('Profil.Visimisi');
 Route::get('/Profil/Struktur', [StrukturController::class, 'index'])->name('Profil.Struktur');
 Route::get('/Profil/Monografi', [MonografiController::class, 'index'])->name('Profil.Monografi');
+Route::get('/Profil/Bidang', [bidangController::class, 'index'])->name('Profil.bidang');
 Route::get('/desa/{nama}', [App\Http\Controllers\DesaController::class, 'show'])->name('desa.show');
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

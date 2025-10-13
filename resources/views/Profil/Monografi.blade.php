@@ -224,7 +224,7 @@
                             aria-labelledby="headingPekerjaan"
                             data-bs-parent="#kependudukanAccordion">
                             <div class="accordion-body fade-in">
-                                <table class="table table-striped table-bordered align-middle">
+                                 <table class="table table-striped table-bordered align-middle">
                                     <thead class="table-warning text-center">
                                         <tr>
                                             <th width="40%">Jenis Pekerjaan</th>

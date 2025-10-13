@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Visi & Misi</title>
+    <title>Seksi Bidang (sekbid)</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="{{ asset('assets/images/Garut.jpg') }}" type="image/png">
@@ -50,35 +50,43 @@
       @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
 
-<section class="py-5 text-center" style="margin-top: 5rem;">
-    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">VISI DAN MISI</h2>
-    <p>
-        Visi Kecamatan Tarogong Kaler, Garut adalah "Terwujudnya Kecamatan Tarogong Kaler yang unggul,
-            berdaya saing, dan sejahtera" dengan visi misi mendukungnya seperti meningkatkan kualitas SDM,
-            infraksrtuktur, dan perekonomian.Berikut adalah detail lebih lanjut.
-    </p>
-</section>
+    <section style="margin-top: 200px;">
+  <h2 class="mb-5">Bidang</h2>
+  <div class="container">
+    <div class="row">
+      @foreach($bidangs as $bidang)
+      <div class="col-md-4 mb-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ $bidang->nama }}</h5>
+            <p class="card-text">{{ Str::limit($bidang->deskripsi, 100) }}</p>
 
-<section class="container py-4">
-    <div class="row align-items-center">
-        <div class="col-md-6 text-start">
-            <img src="{{ asset('assets/images/Wkcimg2 .jpg') }}" alt="Foto Visi Misi" class="img-fluid rounded" />
+            <!-- Tombol buka modal -->
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#bidangModal{{ $bidang->id }}">
+              Lihat Selengkapnya
+            </button>
+          </div>
         </div>
-        <div class="col-md-6 text-start animate__animated animate__slideInLeft">
-            <h4 style="color: black">Visi</h4>
-            <p>
-               "Terwujudnya Kecamatan Tarogong Kaler yang Unggul,
-                 Berdaya saing, dan Sejahtera"
-            </p>
-            <h4 style="color: black; margin-top: 20px;">Misi</h4>
-            <ul>
-                <li>Meningkatkan kualitas Sumber Daya Manusia (SDM): yang beriman, berpengetahuan, dan berakhlak mulia.</li>
-                <li>Meningkatkan kualitas infrastruktur: yang memadai dan terintegrasi.</li>
-                <li>Meningkatkan perekonomian masyarakat yang mandiri dan berkelanjutan.</li>
-                <li>Meningkatkan pelayanan publik: yang berkualitas dan efisien.</li>
-                <li>Meningkatkan partisipasi masyarakat: dalam pembangunan daerah.</li>
-                <li>Mewujudkan tata kelola pemerintahan yang baik dan bersih.</li>
-            </ul>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="bidangModal{{ $bidang->id }}" tabindex="-1" aria-labelledby="bidangModalLabel{{ $bidang->id }}" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bidangModalLabel{{ $bidang->id }}">{{ $bidang->nama }}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+            </div>
+            <div class="modal-body">
+              {{ $bidang->deskripsi }}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            </div>
+          </div>
         </div>
+      </div>
+      @endforeach
     </div>
+  </div>
 </section>

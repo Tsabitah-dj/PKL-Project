@@ -56,64 +56,70 @@
       @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
 
-    <!-- isi sama berita, beritanya terserah -->
-     <section style="margin-top: 200px;">
+  <!-- isi sama berita, beritanya terserah isinya di admin panel -->
+<section style="margin-top: 200px;">
   <div class="container">
     <div class="row">
       @foreach($beritas as $berita)
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100" style="border-radius: 12px; overflow: hidden;">
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100 border-0" style="border-radius: 12px; overflow: hidden; background-color: #fff;">
+          
+          <!-- Gambar -->
+          <img src="{{ asset('storage/' . $berita->foto) }}" 
+               class="card-img-top" 
+               alt="{{ $berita->judul }}" 
+               style="height: 200px; object-fit: cover;">
 
-            <!-- Gambar -->
-            <img src="{{ asset('storage/' . $berita->foto) }}" 
-                 class="card-img-top" 
-                 alt="{{ $berita->judul }}" 
-                 style="height: 200px; object-fit: cover;">
+          <!-- Body -->
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fw-bold text-dark mb-2">{{ $berita->judul }}</h5>
+            <small class="text-muted">{{ $berita->created_at->format('d M Y') }}</small>
+            <p class="card-text text-muted mb-3" style="flex-grow: 1;">
+              {{ Str::limit($berita->deskripsi, 100) }}
+            </p>
 
-            <!-- Body -->
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">{{ $berita->judul }}</h5>
-              <p class="card-text text-muted" style="flex-grow: 1;">
-                {{ Str::limit($berita->deskripsi, 100) }}
+            <!-- Tombol Modal -->
+            <button type="button" 
+                    class="btn btn-primary w-100 mt-auto"
+                    style="border-radius: 8px;"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#beritaModal{{ $berita->id }}">
+              Lihat Selengkapnya
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== MODAL ===== -->
+      <div class="modal fade" id="beritaModal{{ $berita->id }}" tabindex="-1" aria-labelledby="beritaModalLabel{{ $berita->id }}" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content" style="border-radius: 15px;">
+            <div class="modal-header" style="background-color: #647FBC; color: white;">
+              <h5 class="modal-title fw-semibold" id="beritaModalLabel{{ $berita->id }}">{{ $berita->judul }}</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+              <img src="{{ asset('storage/' . $berita->foto) }}" 
+                   class="img-fluid rounded mb-3"
+                   alt="{{ $berita->judul }}">
+              <p class="text-secondary" style="line-height: 1.7;">
+                {{ $berita->deskripsi }}
               </p>
+            </div>
 
-              <!-- Tombol -->
-              <button type="button" 
-                      class="btn btn-primary w-100 mt-auto" 
-                      data-bs-toggle="modal" 
-                      data-bs-target="#beritaModal{{ $berita->id }}">
-                Lihat Selengkapnya
-              </button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
           </div>
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="beritaModal{{ $berita->id }}" tabindex="-1" aria-labelledby="beritaModalLabel{{ $berita->id }}" aria-hidden="true">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="beritaModalLabel{{ $berita->id }}">{{ $berita->judul }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="{{ asset('storage/' . $berita->foto) }}" 
-                     class="img-fluid rounded mb-3" 
-                     alt="{{ $berita->judul }}">
-                <p>{{ $berita->deskripsi }}</p>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
       @endforeach
     </div>
   </div>
 </section>
 
 
-
  
-    <!-- isi sama berita, beritanya terserah -->
+    <!-- isi sama berita, beritanya terserah, isinya dari admin panel -->
     
