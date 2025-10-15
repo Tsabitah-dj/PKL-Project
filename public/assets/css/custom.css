@@ -52,7 +52,7 @@
 
 /* 🔹 Nav menu */
 .custom-navbar .navbar-nav {
-    margin-left: auto; /* dorong menu ke kanan */
+    margin-left: auto; 
 }
 
 .custom-nav .nav-link {
@@ -66,16 +66,23 @@
 
 .custom-nav .nav-link:hover,
 .custom-nav .nav-link.active {
-    color: #ffd700 !important; /* kuning emas */
+    color: #ffd700 !important; 
 }
 
 /* 🔹 Dropdown menu */
 .navbar .dropdown-menu {
-    background-color: #072475; /* biru tua */
+    background-color: #072475; 
     border: none;
     border-radius: 6px;
     padding: 8px 0;
     min-width: 200px;
+}
+
+/* 🔹 Sub-menu scrollable */
+.sub-menu {
+    max-height: 250px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
 }
 
 .navbar .dropdown-menu .dropdown-item {
@@ -219,11 +226,11 @@ body {
 }
 
 .topbar-auth .btn-auth:hover {
-    background: #4a63a3;              /* biru lebih gelap saat hover */
+    background: #4a63a3;             
 }
 
 .topbar-auth {
-    margin-left: 18px;                /* jarak dengan sosmed */
+    margin-left: 18px;             
 }
 
 
@@ -297,8 +304,8 @@ body {
 
 /* ====== Spasi Antar Section ====== */
 section {
-    margin-top: 60px;   /* jarak atas antar section */
-    margin-bottom: 60px; /* jarak bawah antar section */
+    margin-top: 60px;  
+    margin-bottom: 60px; 
 }
 
 /* Biar tidak terlalu dempet sama footer */
@@ -316,12 +323,12 @@ footer {
 /* === Styling Tabel Kepegawaian === */
 .table-bordered th,
 .table-bordered td {
-    border: 2px solid hsl(0, 97%, 55%) !important;
+    border: 2px solid hsl(120, 4%, 11%) !important;
     vertical-align: top; 
 }
 
 .table thead th {
-    background-color: #54e01d; 
+    background-color: #0b3c74f5; 
     color: #fff;
     text-align: center;
 }
@@ -349,10 +356,17 @@ footer {
         to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Set equal height for accordion bodies */
+    
     .accordion-body {
         height: 300px; /* Adjust height as needed based on content */
         overflow-y: auto;
+    }
+
+   
+    .accordion-button {
+        width: 300px;
+        background-color: #B6771D;
+        color: #ccc;
     }
 
     .card-title {
@@ -379,9 +393,9 @@ footer {
   background-color: #5068a8;
 }
 
-/* Background body hijau, sections putih */
+
 body {
-    background-color: #4CAF50; /* Hijau */
+    background-color: #FFF58A;
 }
 
 section {

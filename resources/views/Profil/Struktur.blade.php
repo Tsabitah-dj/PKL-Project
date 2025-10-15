@@ -85,7 +85,7 @@
 </td>
 
             <td>
-                <ul class="mb-0">
+                <ul class="mb-0" style="text-align: left; padding-left: 0;">
                     @foreach(explode("\n", $pegawai->keterangan) as $item)
                         @if(trim($item) != '')
                             <li>{{ $item }}</li>

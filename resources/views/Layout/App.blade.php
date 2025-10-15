@@ -50,7 +50,7 @@
     <!--====== HEADER PART ENDS ======-->
 
     <section class="hero-section">
-        <img src="{{ asset('assets/images/Garutkbt.jpg') }}" alt="Garutkbt" class="hero-image">
+        <img src="{{ asset('assets/images/wkcimg.jpg') }}" alt="Garutkbt" class="hero-image">
 
         <!-- Overlay transparan -->
         <div class="hero-overlay"></div>
@@ -96,9 +96,10 @@
     </div>
 </section>
 
+
 <section class="berita-terbaru py-5">
     <div class="container">
-        <h2 class="text-center mb-4">Berita Terbaru</h2>
+        <h1 class="text-center mb-4">Berita Terbaru</h1>
         <div id="beritaCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-inner">
                 @foreach($beritas->chunk(3) as $index => $chunk)

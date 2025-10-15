@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('komentar', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('berita_id')->constrained()->onDelete('cascade'); 
-            $table->string('nama'); // nama user yg komentar
-            $table->text('isi');    // isi komentar
+        Schema::create('skms', function (Blueprint $table) {
+           $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // ambil dari user yang login
+            $table->string('pelayanan');
+            $table->tinyInteger('nilai'); // 1-5 misalnya
+            $table->text('saran')->nullable();
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('komentar');
+        Schema::dropIfExists('skms');
     }
 };

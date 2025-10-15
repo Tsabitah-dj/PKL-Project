@@ -50,15 +50,19 @@
       @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
 
-    <section style="margin-top: 200px;">
-  <h2 class="mb-5">Bidang</h2>
+<section class="py-5 text-center" style="margin-top: 8rem;">
+    <h2 class="display-5 mb-3" style="color: black;">Seksi Bidang</h2>
+    <p class="text-muted">Sekbid Kecamatan Tarogong Kaler</p>
+</section>
+
+    <section style="margin-top: 100px;">
   <div class="container">
     <div class="row">
       @foreach($bidangs as $bidang)
       <div class="col-md-4 mb-4">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">{{ $bidang->nama }}</h5>
+            <h3 class="card-title">{{ $bidang->nama }}</h3>
             <p class="card-text">{{ Str::limit($bidang->deskripsi, 100) }}</p>
 
             <!-- Tombol buka modal -->
@@ -90,3 +94,50 @@
     </div>
   </div>
 </section>
+
+<!--====== jquery js ======-->
+<script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery-1.12.4.min.js') }}"></script>
+
+<!--====== Bootstrap js ======-->
+<script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/js/popper.min.js') }}"></script>
+
+<!--====== Slick js ======-->
+<script src="{{ asset('assets/js/slick.min.js') }}"></script>
+
+<!--====== Isotope js ======-->
+<script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
+
+<!--====== appear js ======-->
+<script src="{{ asset('assets/js/jquery.appear.min.js') }}"></script>
+
+<!--====== counterup js ======-->
+<script src="{{ asset('assets/js/jquery.counterup.min.js') }}"></script>
+
+<!--====== wow js ======-->
+<script src="{{ asset('assets/js/wow.min.js') }}"></script>
+
+<!--====== circle progress js ======-->
+<script src="{{ asset('assets/js/circle-progress.min.js') }}"></script>
+
+<!--====== waypoints js ======-->
+<script src="{{ asset('assets/js/waypoints.min.js') }}"></script>
+
+<!--====== Images Loaded js ======-->
+<script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
+
+<!--====== Magnific Popup js ======-->
+<script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
+
+<!--====== Ajax Contact js ======-->
+<script src="{{ asset('assets/js/ajax-contact.js') }}"></script>
+
+<!--====== Main js ======-->
+<script src="{{ asset('assets/js/main.js') }}"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

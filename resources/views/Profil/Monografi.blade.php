@@ -120,7 +120,7 @@
         <div class="row align-items-start">
             <!-- Left side: Gambar Wilayah -->
             <div class="col-md-6 text-center mb-4 mb-md-0">
-                <img src="{{ asset('assets/images/wilayahtrkl.png') }}"
+                <img src="{{ asset('assets/images/kependudukan.png') }}"
                     class="img-fluid rounded shadow"
                     alt="Peta Wilayah Kecamatan Tarogong Kaler"
                     style="width: 100%; height: auto;">

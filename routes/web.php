@@ -15,6 +15,7 @@ use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\MonografiController;
 use App\Http\Controllers\DesaController;  
 use App\Http\Controllers\bidangController;  
+use App\Http\Controllers\skmController;
 
 
 Route::get('/', function () {
@@ -34,6 +35,11 @@ Route::get('/Profil/Struktur', [StrukturController::class, 'index'])->name('Prof
 Route::get('/Profil/Monografi', [MonografiController::class, 'index'])->name('Profil.Monografi');
 Route::get('/Profil/Bidang', [bidangController::class, 'index'])->name('Profil.bidang');
 Route::get('/desa/{nama}', [App\Http\Controllers\DesaController::class, 'show'])->name('desa.show');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/SKM', [skmController::class, 'index'])->name('Halaman.SKM');
+    Route::post('/SKM', [skmController::class, 'store'])->name('skm.store');
+});
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
