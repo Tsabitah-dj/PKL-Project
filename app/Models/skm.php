@@ -13,7 +13,7 @@ class Skm extends Model
     protected $table = 'skms';
     protected $fillable = [
         'user_id',
-        'pelayanan',
+        'penilaian',
         'nilai',
         'saran',
     ];

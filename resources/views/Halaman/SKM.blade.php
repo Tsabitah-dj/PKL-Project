@@ -74,27 +74,25 @@
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Pelayanan yang Diterima</label>
-                <select name="pelayanan" class="form-select" required>
-                    <option value="">-- Pilih Pelayanan --</option>
-                    <option value="Pembuatan KTP">Pembuatan KTP</option>
-                    <option value="Pembuatan KK">Pembuatan KK</option>
-                    <option value="Surat Domisili">Surat Domisili</option>
-                    <option value="Pindah Datang">Pindah Datang</option>
-                    <option value="Pelayanan Lainnya">Pelayanan Lainnya</option>
-                </select>
+                <label class="form-label">1. Bagaimana penilaian anda tentang pelayanannya</label>
+                <div>
+                    <input type="radio" name="penilaian" value="Sangat Baik" required> Sangat Baik<br>
+                    <input type="radio" name="penilaian" value="Baik"> Baik<br>
+                    <input type="radio" name="penilaian" value="Cukup Baik"> Cukup Baik<br>
+                    <input type="radio" name="penilaian" value="Kurang Baik"> Kurang Baik<br>
+                    <input type="radio" name="penilaian" value="Tidak Baik"> Tidak Baik
+                </div>
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Nilai Kepuasan</label>
-                <select name="nilai" class="form-select" required>
-                    <option value="">-- Pilih Nilai --</option>
-                    <option value="5">Sangat Puas</option>
-                    <option value="4">Puas</option>
-                    <option value="3">Cukup Puas</option>
-                    <option value="2">Kurang Puas</option>
-                    <option value="1">Tidak Puas</option>
-                </select>
+                <label class="form-label">2. Nilai Kepuasan anda</label>
+                <div>
+                    <input type="radio" name="nilai" value="5" required> Sangat Puas<br>
+                    <input type="radio" name="nilai" value="4"> Puas<br>
+                    <input type="radio" name="nilai" value="3"> Cukup Puas<br>
+                    <input type="radio" name="nilai" value="2"> Kurang Puas<br>
+                    <input type="radio" name="nilai" value="1"> Tidak Puas
+                </div>
             </div>
 
             <div class="mb-3">

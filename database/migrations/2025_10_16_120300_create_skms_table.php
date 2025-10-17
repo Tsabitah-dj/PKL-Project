@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('skms', function (Blueprint $table) {
            $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade'); // ambil dari user yang login
-            $table->string('pelayanan');
+            $table->text('penilaian')->nullable();
             $table->tinyInteger('nilai'); // 1-5 misalnya
             $table->text('saran')->nullable();
             $table->timestamps();

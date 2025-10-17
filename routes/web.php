@@ -33,7 +33,7 @@ Route::post('/berita/{id}/komentar', [KomentarController::class, 'store'])->name
 Route::get('/Profil/Visimisi', [visimisicontroller::class, 'index'])->name('Profil.Visimisi');
 Route::get('/Profil/Struktur', [StrukturController::class, 'index'])->name('Profil.Struktur');
 Route::get('/Profil/Monografi', [MonografiController::class, 'index'])->name('Profil.Monografi');
-Route::get('/Profil/Bidang', [bidangController::class, 'index'])->name('Profil.bidang');
+Route::get('/Profil/Bidang', [bidangController::class, 'index'])->name('Profil.Bidang');
 Route::get('/desa/{nama}', [App\Http\Controllers\DesaController::class, 'show'])->name('desa.show');
 
 Route::middleware(['auth'])->group(function () {

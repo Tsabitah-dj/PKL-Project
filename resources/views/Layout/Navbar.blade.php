@@ -68,6 +68,7 @@
             <li><a href="{{route('Profil.Visimisi')}}">Visi & Misi</a></li>
             <li><a href="{{route('Profil.Struktur')}}">Struktur/Kepegawaian</a></li>
             <li><a href="{{route('Profil.Monografi')}}">Monografi Kecamatan</a></li>
+            <li><a href="{{route('Profil.Bidang')}}">Sekbid</a></li>
         </ul>
     </li>
 
@@ -103,6 +104,11 @@
     <li class="nav-item">
         <a class="nav-link {{ request()->routeIs('Halaman.Berita') ? 'active' : '' }}"
            href="{{ route('Halaman.Berita') }}">Berita</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link {{ request()->routeIs('Halaman.SKM') ? 'active' : '' }}"
+           href="{{ route('Halaman.SKM') }}">SKM</a>
     </li>
 </ul>
 
