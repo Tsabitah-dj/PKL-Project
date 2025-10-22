@@ -11,10 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::dropIfExists('desa');
         Schema::create('desa', function (Blueprint $table) {
             $table->id();
             $table->string('Nama_Desa');
-            $table->string('Link_website')->nullable();
+            $table->string('Link_website');
             $table->timestamps();
         });
     }

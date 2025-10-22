@@ -57,8 +57,8 @@
 
         <!-- Text tengah -->
         <div class="hero-text">
-            <h1>SELAMAT DATANG</h1>
-            <p>Website Kecamatan Tarogong Kaler</p>
+            <h1>TAROGONG KALER</h1>
+            <p>SPEKTAKULER</p>
         </div>
     </section>
 
@@ -76,9 +76,12 @@
             <div class="col-md-7">
                 <h2 class="fw-bold mb-3">Kata Sambutan</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Curabitur id nunc vitae ligula fermentum imperdiet. 
-                    Suspendisse potenti. Aliquam erat volutpat.
+                    Assalamualaikum warahmatullahi wabarokatuh.
+                    Saudara Saudari di seluruh penjuru Tanah Air yang saya banggakan.
+                    Marilah kita panjatkan Puji Syukur Kehadirat Allah SWT, Tuhan yang maha Esa,
+                    atas segala limpahan Rahmat dan karunia-nya.Dihari yang penuh berkah ini, kita dapat 
+                    bersama-sama memperingati Hari Santri tahun 2025, sebuah momemtum yang selalu kita rayakan
+                    dengan penuh rasa cinta dan kebanggaan. 
                 </p>
                 <p>
                     Vivamus et nisl ac odio congue volutpat. Sed nec felis 

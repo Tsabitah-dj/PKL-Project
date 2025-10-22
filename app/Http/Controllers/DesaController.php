@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\desa;
+use App\Models\ketdesa;
 
 class DesaController extends Controller
 {
@@ -12,10 +14,12 @@ class DesaController extends Controller
 
         // Kalau file-nya ada di folder /resources/views/desa/
         if (view()->exists($view)) {
-            return view($view);
+            $desas = desa::all();
+            $ketdesas = ketdesa::all();
+            return view($view, compact('desas', 'ketdesas'));
         }
 
-        // Kalau tidak ditemukan, tampilkan halaman error
+
         abort(404, 'Halaman desa tidak ditemukan');
     }
 }

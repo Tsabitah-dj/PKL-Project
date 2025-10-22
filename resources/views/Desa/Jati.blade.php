@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>@yield('title', 'Kecamatan Tarogong Kaler')</title>
+    <title>Desa Jati</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="{{ asset('assets/images/Garut.jpg') }}" type="image/png">
@@ -48,3 +48,82 @@
     <!--====== HEADER PART START ======-->
     @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
+
+    <!--====== MAIN CONTENT START ======-->
+
+    <section class="py-5 text-center" style="margin-top: 5rem;">
+    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">Desa Jati</h2>
+    <p> Berlokasi Di </p>
+</section>
+
+<section class="main-content">
+    <div class="container">
+        <table class="table custom-table">
+            <thead>
+                <tr>
+                    <th>Nama Desa</th>
+                    <th>Link Website</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($desas as $desa)
+                    @if($desa->id == 2)
+                        <tr>
+                            <td>{{ $desa->Nama_Desa }}</td>
+                            <td>
+                                <a href="{{ $desa->Link_website }}" target="_blank">
+                                    {{ $desa->Link_website }}
+                                </a>
+                            </td>
+                        </tr>
+                    @endif
+                @endforeach
+            </tbody>
+        </table>
+
+        <table class="table custom-table" style="margin-top: 40px;">
+            <thead>
+                <tr>
+                    <th>Kategori</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($ketdesas as $ketdesa)
+                   @if($ketdesa->no == 2)
+                    <tr>
+                        <td>{{ $ketdesa->kategori }}</td>
+                        <td>{{ $ketdesa->keterangan }}</td>
+                    </tr>
+                      @endif
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<style>
+ /* ==== Styling tambahan untuk table ==== */
+    .custom-table {
+        border: 1px solid #444;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .custom-table th, 
+    .custom-table td {
+        border: 1px solid #555;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .custom-table th {
+        background-color: #f0f0f0;
+    }
+
+    /* Jarak antar tabel */
+    .custom-table + .custom-table {
+        margin-top: 40px;
+    }
+</style>
+    <!--====== MAIN CONTENT ENDS ======-->

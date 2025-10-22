@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>@yield('title', 'Kecamatan Tarogong Kaler')</title>
+    <title>Desa Pasawahan</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="{{ asset('assets/images/Garut.jpg') }}" type="image/png">
@@ -48,3 +48,27 @@
     <!--====== HEADER PART START ======-->
     @include('Layout/Navbar')
     <!--====== HEADER PART ENDS ======-->
+
+    <!--====== MAIN CONTENT START ======-->
+    <section class="main-content">
+        <div class="container">
+            <h1>Desa Pasawahan</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nama Desa</th>
+                        <th>Link Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($desas as $desa)
+                        <tr>
+                            <td>{{ $desa->Nama_Desa }}</td>
+                            <td><a href="{{ $desa->Link_website }}" target="_blank">{{ $desa->Link_website }}</a></td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!--====== MAIN CONTENT ENDS ======-->
