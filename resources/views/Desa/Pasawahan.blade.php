@@ -50,10 +50,15 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== MAIN CONTENT START ======-->
+
+<section class="py-5 text-center" style="margin-top: 5rem;">
+    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">Desa Pasawahan</h2>
+    <p> Berlokasi Di </p>
+</section>
+
     <section class="main-content">
         <div class="container">
-            <h1>Desa Pasawahan</h1>
-            <table class="table table-striped">
+             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Nama Desa</th>
@@ -62,13 +67,34 @@
                 </thead>
                 <tbody>
                     @foreach($desas as $desa)
+                      @if($desa->id == 9)
                         <tr>
                             <td>{{ $desa->Nama_Desa }}</td>
                             <td><a href="{{ $desa->Link_website }}" target="_blank">{{ $desa->Link_website }}</a></td>
                         </tr>
+                        @endif
                     @endforeach
                 </tbody>
             </table>
+
+             <table class="table custom-table" style="margin-top: 40px;">
+            <thead>
+                <tr>
+                    <th>Kategori</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($pasawahans as $jati)
+                 
+                    <tr>
+                        <td>{{ $jati->kategori }}</td>
+                        <td>{{ $jati->keterangan }}</td>
+                    </tr>
+                    
+                @endforeach
+            </tbody>
+        </table>
         </div>
     </section>
     <!--====== MAIN CONTENT ENDS ======-->

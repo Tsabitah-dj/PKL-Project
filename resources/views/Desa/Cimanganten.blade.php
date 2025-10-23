@@ -50,10 +50,14 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== MAIN CONTENT START ======-->
+<section class="py-5 text-center" style="margin-top: 5rem;">
+    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">Desa Cimanganten</h2>
+    <p> Berlokasi Di </p>
+</section>
+
     <section class="main-content">
         <div class="container">
-            <h1>Desa Cimanganten</h1>
-            <table class="table table-striped">
+            <table class="table custom-table">
                 <thead>
                     <tr>
                         <th>Nama Desa</th>
@@ -62,15 +66,62 @@
                 </thead>
                 <tbody>
                     @foreach($desas as $desa)
+                    @if($desa->id == 1)
                         <tr>
                             <td>{{ $desa->Nama_Desa }}</td>
                             <td><a href="{{ $desa->Link_website }}" target="_blank">{{ $desa->Link_website }}</a></td>
                         </tr>
+                        @endif
                     @endforeach
                 </tbody>
             </table>
+
+            <table class="table custom-table" style="margin-top: 40px;">
+            <thead>
+                <tr>
+                    <th>Kategori</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach($ketdesas as $item)
+                 
+                    <tr>
+                        <td>{{ $item->kategori }}</td>
+                        <td>{{ $item->keterangan }}</td>
+                    </tr>
+                    
+                @endforeach
+            </tbody>
+        </table>
         </div>
     </section>
+    <style>
+ /* ==== Styling tambahan untuk table ==== */
+    .custom-table {
+        border: 1px solid #444;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .custom-table th, 
+    .custom-table td {
+        border: 1px solid #555;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .custom-table th {
+        background-color: #f0f0f0;
+    }
+
+    /* Jarak antar tabel */
+    .custom-table + .custom-table {
+        margin-top: 40px;
+    }
+</style>
+    <!--====== MAIN CONTENT ENDS ======-->
+
     <!--====== MAIN CONTENT ENDS ======-->
 
 

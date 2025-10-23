@@ -89,13 +89,13 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($ketdesas as $ketdesa)
-                   @if($ketdesa->no == 2)
+                @foreach($jatis as $jati)
+                 
                     <tr>
-                        <td>{{ $ketdesa->kategori }}</td>
-                        <td>{{ $ketdesa->keterangan }}</td>
+                        <td>{{ $jati->kategori }}</td>
+                        <td>{{ $jati->keterangan }}</td>
                     </tr>
-                      @endif
+                    
                 @endforeach
             </tbody>
         </table>

@@ -50,9 +50,14 @@
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== MAIN CONTENT START ======-->
+
+<section class="py-5 text-center" style="margin-top: 5rem;">
+    <h2 class="display-5 mb-4" style="margin-top: 4rem; color: black;">Desa Rancamekar</h2>
+    <p> Berlokasi Di </p>
+</section>
+
     <section class="main-content">
         <div class="container">
-            <h1>Desa Rancamekar</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -62,10 +67,12 @@
                 </thead>
                 <tbody>
                     @foreach($desas as $desa)
+                      @if($desa->id == 8)
                         <tr>
                             <td>{{ $desa->Nama_Desa }}</td>
                             <td><a href="{{ $desa->Link_website }}" target="_blank">{{ $desa->Link_website }}</a></td>
                         </tr>
+                        @endif
                     @endforeach
                 </tbody>
             </table>

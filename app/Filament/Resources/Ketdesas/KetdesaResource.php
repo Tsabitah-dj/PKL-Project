@@ -22,7 +22,7 @@ class KetdesaResource extends Resource
 
     protected static string|\UnitEnum|null $navigationGroup = 'Data Desa';
 
-    protected static ?string $navigationLabel = 'Ket Desa';
+    protected static ?string $navigationLabel = 'Cimanganten';
 
 
     public static function form(Schema $schema): Schema

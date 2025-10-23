@@ -112,7 +112,7 @@
                         <div class="col-md-4 mb-4">
                             <div class="card shadow-sm" style="height: 300px;">
                                 <img src="{{ asset('storage/' . $berita->foto) }}" class="card-img-top" alt="Berita" style="height: 150px; object-fit: cover;">
-                                <div class="card-body d-flex flex-column">
+                                <div class= "card-body d-flex flex-column">
                                     <h5 class="card-title">{{ $berita->judul }}</h5>
                                     <small class="text-muted">{{ $berita->created_at->format('d M Y') }}</small>
                                     <p class="card-text text-truncate flex-grow-1">{{ Str::limit($berita->deskripsi, 100) }}</p>

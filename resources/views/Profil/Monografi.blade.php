@@ -64,21 +64,23 @@
             <!-- Left side: Collapsible Table -->
             <div class="col-md-6 mb-4 mb-md-0">
                 <div class="accordion" id="monografiAccordion">
-                    <div class="accordion-item shadow-sm border-0">
-                        <h4 class="accordion-header" id="headingMonografi">
+
+                    <!-- Accordion 1: Luas Wilayah dan Topografi -->
+                    <div class="accordion-item shadow-sm border-0 mb-3">
+                        <h4 class="accordion-header" id="headingMonografi1">
                             <button class="accordion-button collapsed fw-semibold d-flex justify-content-between"
                                 type="button"
                                 data-bs-toggle="collapse"
-                                data-bs-target="#collapseMonografi"
+                                data-bs-target="#collapseMonografi1"
                                 aria-expanded="false"
-                                aria-controls="collapseMonografi">
-                                 Luas Wilayah Dan Topografi
+                                aria-controls="collapseMonografi1">
+                                Luas Wilayah dan Topografi
                                 <i class="fa-solid fa-chevron-down ms-2 rotate-icon"></i>
                             </button>
                         </h4>
-                        <div id="collapseMonografi"
+                        <div id="collapseMonografi1"
                             class="accordion-collapse collapse"
-                            aria-labelledby="headingMonografi"
+                            aria-labelledby="headingMonografi1"
                             data-bs-parent="#monografiAccordion">
                             <div class="accordion-body fade-in">
                                 <table class="table table-striped table-bordered align-middle">
@@ -100,6 +102,83 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Accordion 2: Jumlah Tempat Ibadah -->
+                    <div class="accordion-item shadow-sm border-0 mb-3">
+                        <h4 class="accordion-header" id="headingMonografi2">
+                            <button class="accordion-button collapsed fw-semibold d-flex justify-content-between"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseMonografi2"
+                                aria-expanded="false"
+                                aria-controls="collapseMonografi2">
+                                Jumlah Tempat Ibadah
+                                <i class="fa-solid fa-chevron-down ms-2 rotate-icon"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseMonografi2"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingMonografi2"
+                            data-bs-parent="#monografiAccordion">
+                            <div class="accordion-body fade-in">
+                                <table class="table table-striped table-bordered align-middle">
+                                    <thead class="table-primary text-center">
+                                        <tr>
+                                            <th width="40%">Nama Tempat Ibadah</th>
+                                            <th>Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                     @foreach($tempatibadahs as $item)
+                                        <tr>
+                                            <td>{{ $item->nm_tempatibadah }}</td>
+                                            <td>{{ $item->jumlah }}</td>
+                                        </tr>
+                                       @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 3: (Kosong untuk nanti) -->
+                    <div class="accordion-item shadow-sm border-0">
+                        <h4 class="accordion-header" id="headingMonografi3">
+                            <button class="accordion-button collapsed fw-semibold d-flex justify-content-between"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseMonografi3"
+                                aria-expanded="false"
+                                aria-controls="collapseMonografi3">
+                                {{-- Ganti Judul di Sini --}}
+                                Judul Data Tambahan
+                                <i class="fa-solid fa-chevron-down ms-2 rotate-icon"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseMonografi3"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingMonografi3"
+                            data-bs-parent="#monografiAccordion">
+                            <div class="accordion-body fade-in">
+                               <table class="table table-striped table-bordered align-middle">
+                                    <thead class="table-primary text-center">
+                                        <tr>
+                                            <th width="40%">Nama Tempat Ibadah</th>
+                                            <th>Jumlah</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                   
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
