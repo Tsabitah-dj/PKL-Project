@@ -19,7 +19,8 @@ class MekarjayaResource extends Resource
     protected static ?string $model = Mekarjaya::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+    protected static string|\UnitEnum|null $navigationGroup = 'Data Desa';
+ 
     public static function form(Schema $schema): Schema
     {
         return MekarjayaForm::configure($schema);

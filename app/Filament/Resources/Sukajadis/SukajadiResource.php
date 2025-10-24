@@ -19,6 +19,7 @@ class SukajadiResource extends Resource
     protected static ?string $model = Sukajadi::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+protected static string|\UnitEnum|null $navigationGroup = 'Data Desa';
 
     public static function form(Schema $schema): Schema
     {

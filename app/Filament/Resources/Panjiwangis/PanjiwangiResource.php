@@ -19,6 +19,7 @@ class PanjiwangiResource extends Resource
     protected static ?string $model = Panjiwangi::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+protected static string|\UnitEnum|null $navigationGroup = 'Data Desa';
 
     public static function form(Schema $schema): Schema
     {
