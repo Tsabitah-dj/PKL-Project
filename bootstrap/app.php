@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use App\Http\Middleware\VisitorLogger;
 use App\Http\Middleware\AdminOnly;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -15,6 +16,10 @@ return Application::configure(basePath: dirname(__DIR__))
         //
          $middleware->alias([
             'admin.only' => AdminOnly::class, // ⬅️ alias buat middleware AdminOnly
+        ]);
+
+         $middleware->web(append: [
+            VisitorLogger::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

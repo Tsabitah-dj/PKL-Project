@@ -59,7 +59,7 @@
 
        <div class="text-center mt-3">
     <small class="text-muted">
-      &copy; {{ date('Y') }} Kabupaten Garut. Created by PPLG,SMKN 1 GRT (TAR)
+      &copy; {{ date('Y') }} Kabupaten Garut. Created by PPLG,SMKN 1 GRT (ART)
     </small>
   </div>
 

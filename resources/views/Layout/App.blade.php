@@ -200,6 +200,37 @@
 
     <!-- diisi sama address/alamat , harus ada gambar mapnya, -->
 
+    {{-- Buat jumlah Pengunjung  --}}
+    <section class="py-5 text-center">
+    <div class="container">
+        <h4 class="mb-4">Statistik Pengunjung</h4>
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-3">
+                <div class="card visitor-card visitor-today shadow-sm p-3 text-white">
+                    <h6>Pengunjung Hari Ini</h6>
+                    <h2 class="fw-bold">{{ $today }}</h2>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card visitor-card visitor-week shadow-sm p-3 text-white">
+                    <h6>7 Hari Terakhir</h6>
+                    <h2 class="fw-bold">{{ $last7days }}</h2>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card visitor-card visitor-total shadow-sm p-3 text-white">
+                    <h6>Total Pengunjung</h6>
+                    <h2 class="fw-bold">{{ $total }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+     {{-- Buat jumlah Pengunjung  --}}
+
     <!--====== FOOTER PART START ======-->
     @include('Layout/Footer')
     <!--====== FOOTER PART ENDS ======-->
