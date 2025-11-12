@@ -67,7 +67,7 @@
         <div class="row align-items-center">
             <!-- Foto -->
             <div class="col-md-5 text-center">
-                <img src="{{ asset('assets/images/Garut.jpg') }}" 
+                <img src="{{ asset('assets/images/Camat.jpg') }}" 
                      alt="Foto Camat" 
                      class="img-fluid rounded shadow">
             </div>
